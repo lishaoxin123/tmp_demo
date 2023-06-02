@@ -1,11 +1,13 @@
 <template>
   <el-config-provider :locale="currentLocale">
+    <!-- <Home /> -->
     <router-view />
-    <ReDialog />
+    <!-- <ReDialog /> -->
   </el-config-provider>
 </template>
 
 <script lang="ts">
+// import Home from "./views/home";
 import { defineComponent } from "vue";
 import { ElConfigProvider } from "element-plus";
 import zhCn from "element-plus/lib/locale/lang/zh-cn";
@@ -14,6 +16,7 @@ export default defineComponent({
   name: "app",
   components: {
     [ElConfigProvider.name]: ElConfigProvider,
+    // Home,
     ReDialog
   },
   computed: {
