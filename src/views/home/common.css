@@ -67,7 +67,7 @@
 }
 
 .ellipsis[class*="line-"],
-.panel .panel-body .stat-body[class*="line-"] {
+.panel .panel-body .stat-body [class*="line-"] {
   white-space: unset;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -546,9 +546,9 @@ form .field-wrap.check_boxes.block .checkbox:before,
 .form-wrap .field-wrap.radio_buttons.block .checkbox:before,
 .form-wrap .field-wrap.check_boxes.block .radio:before,
 .form-wrap .field-wrap.check_boxes.block .checkbox:before,
-body.consumer .cta-box:before,
-body.public_instructors-index .cta-box:before,
-body.dkts-finish_test .cta-box:before,
+body .consumer .cta-box:before,
+body .public_instructors-index .cta-box:before,
+body ..cta-box:before,
 .reveal-modal .form-actions:before,
 .panel .panel-heading:before,
 ul:before,
@@ -562,9 +562,9 @@ form .field-wrap.check_boxes.block .checkbox:after,
 .form-wrap .field-wrap.radio_buttons.block .checkbox:after,
 .form-wrap .field-wrap.check_boxes.block .radio:after,
 .form-wrap .field-wrap.check_boxes.block .checkbox:after,
-body.consumer .cta-box:after,
-body.public_instructors-index .cta-box:after,
-body.dkts-finish_test .cta-box:after,
+body .consumer .cta-box:after,
+body .public_instructors-index .cta-box:after,
+body ..cta-box:after,
 .reveal-modal .form-actions:after,
 .panel .panel-heading:after,
 ul:after,
@@ -582,9 +582,9 @@ form .field-wrap.check_boxes.block .checkbox:after,
 .form-wrap .field-wrap.radio_buttons.block .checkbox:after,
 .form-wrap .field-wrap.check_boxes.block .radio:after,
 .form-wrap .field-wrap.check_boxes.block .checkbox:after,
-body.consumer .cta-box:after,
-body.public_instructors-index .cta-box:after,
-body.dkts-finish_test .cta-box:after,
+body .consumer .cta-box:after,
+body .public_instructors-index .cta-box:after,
+body ..cta-box:after,
 .reveal-modal .form-actions:after,
 .panel .panel-heading:after,
 ul:after,
@@ -5702,7 +5702,8 @@ kbd {
 .label,
 #learner-price-table .lessons .saved,
 .learner-price-table .lessons .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -5726,7 +5727,8 @@ body.booking-view_products
 .label.radius,
 #learner-price-table .lessons .radius.saved,
 .learner-price-table .lessons .radius.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -5738,7 +5740,8 @@ body.booking-view_products
 .label.round,
 #learner-price-table .lessons .round.saved,
 .learner-price-table .lessons .round.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -5750,7 +5753,8 @@ body.booking-view_products
 .label.alert,
 #learner-price-table .lessons .alert.saved,
 .learner-price-table .lessons .alert.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -5763,7 +5767,8 @@ body.booking-view_products
 .label.warning,
 #learner-price-table .lessons .warning.saved,
 .learner-price-table .lessons .warning.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -5776,7 +5781,8 @@ body.booking-view_products
 .label.success,
 #learner-price-table .lessons .success.saved,
 .learner-price-table .lessons .success.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -5789,7 +5795,8 @@ body.booking-view_products
 .label.secondary,
 #learner-price-table .lessons .secondary.saved,
 .learner-price-table .lessons .secondary.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -5802,7 +5809,8 @@ body.booking-view_products
 .label.info,
 #learner-price-table .lessons .info.saved,
 .learner-price-table .lessons .info.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -9504,26 +9512,26 @@ ul.off-canvas-list li a:active {
     display: table-header-group !important;
   }
 
-  tbody.show-for-small-only,
-  tbody.show-for-small-up,
-  tbody.show-for-small,
-  tbody.show-for-small-down,
-  tbody.hide-for-medium-only,
-  tbody.hide-for-medium-up,
-  tbody.hide-for-medium,
-  tbody.show-for-medium-down,
-  tbody.hide-for-large-only,
-  tbody.hide-for-large-up,
-  tbody.hide-for-large,
-  tbody.show-for-large-down,
-  tbody.hide-for-xlarge-only,
-  tbody.hide-for-xlarge-up,
-  tbody.hide-for-xlarge,
-  tbody.show-for-xlarge-down,
-  tbody.hide-for-xxlarge-only,
-  tbody.hide-for-xxlarge-up,
-  tbody.hide-for-xxlarge,
-  tbody.show-for-xxlarge-down {
+  tbody .show-for-small-only,
+  tbody .show-for-small-up,
+  tbody .show-for-small,
+  tbody .show-for-small-down,
+  tbody .hide-for-medium-only,
+  tbody .hide-for-medium-up,
+  tbody .hide-for-medium,
+  tbody .show-for-medium-down,
+  tbody .hide-for-large-only,
+  tbody .hide-for-large-up,
+  tbody .hide-for-large,
+  tbody .show-for-large-down,
+  tbody .hide-for-xlarge-only,
+  tbody .hide-for-xlarge-up,
+  tbody .hide-for-xlarge,
+  tbody .show-for-xlarge-down,
+  tbody .hide-for-xxlarge-only,
+  tbody .hide-for-xxlarge-up,
+  tbody .hide-for-xxlarge,
+  tbody .show-for-xxlarge-down {
     display: table-row-group !important;
   }
 
@@ -9741,26 +9749,26 @@ ul.off-canvas-list li a:active {
     display: table-header-group !important;
   }
 
-  tbody.hide-for-small-only,
-  tbody.show-for-small-up,
-  tbody.hide-for-small,
-  tbody.hide-for-small-down,
-  tbody.show-for-medium-only,
-  tbody.show-for-medium-up,
-  tbody.show-for-medium,
-  tbody.show-for-medium-down,
-  tbody.hide-for-large-only,
-  tbody.hide-for-large-up,
-  tbody.hide-for-large,
-  tbody.show-for-large-down,
-  tbody.hide-for-xlarge-only,
-  tbody.hide-for-xlarge-up,
-  tbody.hide-for-xlarge,
-  tbody.show-for-xlarge-down,
-  tbody.hide-for-xxlarge-only,
-  tbody.hide-for-xxlarge-up,
-  tbody.hide-for-xxlarge,
-  tbody.show-for-xxlarge-down {
+  tbody .hide-for-small-only,
+  tbody .show-for-small-up,
+  tbody .hide-for-small,
+  tbody .hide-for-small-down,
+  tbody .show-for-medium-only,
+  tbody .show-for-medium-up,
+  tbody .show-for-medium,
+  tbody .show-for-medium-down,
+  tbody .hide-for-large-only,
+  tbody .hide-for-large-up,
+  tbody .hide-for-large,
+  tbody .show-for-large-down,
+  tbody .hide-for-xlarge-only,
+  tbody .hide-for-xlarge-up,
+  tbody .hide-for-xlarge,
+  tbody .show-for-xlarge-down,
+  tbody .hide-for-xxlarge-only,
+  tbody .hide-for-xxlarge-up,
+  tbody .hide-for-xxlarge,
+  tbody .show-for-xxlarge-down {
     display: table-row-group !important;
   }
 
@@ -9978,26 +9986,26 @@ ul.off-canvas-list li a:active {
     display: table-header-group !important;
   }
 
-  tbody.hide-for-small-only,
-  tbody.show-for-small-up,
-  tbody.hide-for-small,
-  tbody.hide-for-small-down,
-  tbody.hide-for-medium-only,
-  tbody.show-for-medium-up,
-  tbody.hide-for-medium,
-  tbody.hide-for-medium-down,
-  tbody.show-for-large-only,
-  tbody.show-for-large-up,
-  tbody.show-for-large,
-  tbody.show-for-large-down,
-  tbody.hide-for-xlarge-only,
-  tbody.hide-for-xlarge-up,
-  tbody.hide-for-xlarge,
-  tbody.show-for-xlarge-down,
-  tbody.hide-for-xxlarge-only,
-  tbody.hide-for-xxlarge-up,
-  tbody.hide-for-xxlarge,
-  tbody.show-for-xxlarge-down {
+  tbody .hide-for-small-only,
+  tbody .show-for-small-up,
+  tbody .hide-for-small,
+  tbody .hide-for-small-down,
+  tbody .hide-for-medium-only,
+  tbody .show-for-medium-up,
+  tbody .hide-for-medium,
+  tbody .hide-for-medium-down,
+  tbody .show-for-large-only,
+  tbody .show-for-large-up,
+  tbody .show-for-large,
+  tbody .show-for-large-down,
+  tbody .hide-for-xlarge-only,
+  tbody .hide-for-xlarge-up,
+  tbody .hide-for-xlarge,
+  tbody .show-for-xlarge-down,
+  tbody .hide-for-xxlarge-only,
+  tbody .hide-for-xxlarge-up,
+  tbody .hide-for-xxlarge,
+  tbody .show-for-xxlarge-down {
     display: table-row-group !important;
   }
 
@@ -10215,26 +10223,26 @@ ul.off-canvas-list li a:active {
     display: table-header-group !important;
   }
 
-  tbody.hide-for-small-only,
-  tbody.show-for-small-up,
-  tbody.hide-for-small,
-  tbody.hide-for-small-down,
-  tbody.hide-for-medium-only,
-  tbody.show-for-medium-up,
-  tbody.hide-for-medium,
-  tbody.hide-for-medium-down,
-  tbody.hide-for-large-only,
-  tbody.show-for-large-up,
-  tbody.hide-for-large,
-  tbody.hide-for-large-down,
-  tbody.show-for-xlarge-only,
-  tbody.show-for-xlarge-up,
-  tbody.show-for-xlarge,
-  tbody.show-for-xlarge-down,
-  tbody.hide-for-xxlarge-only,
-  tbody.hide-for-xxlarge-up,
-  tbody.hide-for-xxlarge,
-  tbody.show-for-xxlarge-down {
+  tbody .hide-for-small-only,
+  tbody .show-for-small-up,
+  tbody .hide-for-small,
+  tbody .hide-for-small-down,
+  tbody .hide-for-medium-only,
+  tbody .show-for-medium-up,
+  tbody .hide-for-medium,
+  tbody .hide-for-medium-down,
+  tbody .hide-for-large-only,
+  tbody .show-for-large-up,
+  tbody .hide-for-large,
+  tbody .hide-for-large-down,
+  tbody .show-for-xlarge-only,
+  tbody .show-for-xlarge-up,
+  tbody .show-for-xlarge,
+  tbody .show-for-xlarge-down,
+  tbody .hide-for-xxlarge-only,
+  tbody .hide-for-xxlarge-up,
+  tbody .hide-for-xxlarge,
+  tbody .show-for-xxlarge-down {
     display: table-row-group !important;
   }
 
@@ -10452,26 +10460,26 @@ ul.off-canvas-list li a:active {
     display: table-header-group !important;
   }
 
-  tbody.hide-for-small-only,
-  tbody.show-for-small-up,
-  tbody.hide-for-small,
-  tbody.hide-for-small-down,
-  tbody.hide-for-medium-only,
-  tbody.show-for-medium-up,
-  tbody.hide-for-medium,
-  tbody.hide-for-medium-down,
-  tbody.hide-for-large-only,
-  tbody.show-for-large-up,
-  tbody.hide-for-large,
-  tbody.hide-for-large-down,
-  tbody.hide-for-xlarge-only,
-  tbody.show-for-xlarge-up,
-  tbody.hide-for-xlarge,
-  tbody.hide-for-xlarge-down,
-  tbody.show-for-xxlarge-only,
-  tbody.show-for-xxlarge-up,
-  tbody.show-for-xxlarge,
-  tbody.show-for-xxlarge-down {
+  tbody .hide-for-small-only,
+  tbody .show-for-small-up,
+  tbody .hide-for-small,
+  tbody .hide-for-small-down,
+  tbody .hide-for-medium-only,
+  tbody .show-for-medium-up,
+  tbody .hide-for-medium,
+  tbody .hide-for-medium-down,
+  tbody .hide-for-large-only,
+  tbody .show-for-large-up,
+  tbody .hide-for-large,
+  tbody .hide-for-large-down,
+  tbody .hide-for-xlarge-only,
+  tbody .show-for-xlarge-up,
+  tbody .hide-for-xlarge,
+  tbody .hide-for-xlarge-down,
+  tbody .show-for-xxlarge-only,
+  tbody .show-for-xxlarge-up,
+  tbody .show-for-xxlarge,
+  tbody .show-for-xxlarge-down {
     display: table-row-group !important;
   }
 
@@ -10562,8 +10570,8 @@ thead.show-for-portrait {
   display: table-header-group !important;
 }
 
-tbody.hide-for-landscape,
-tbody.show-for-portrait {
+tbody .hide-for-landscape,
+tbody .show-for-portrait {
   display: table-row-group !important;
 }
 
@@ -10600,8 +10608,8 @@ th.show-for-portrait {
     display: table-header-group !important;
   }
 
-  tbody.show-for-landscape,
-  tbody.hide-for-portrait {
+  tbody .show-for-landscape,
+  tbody .hide-for-portrait {
     display: table-row-group !important;
   }
 
@@ -10639,8 +10647,8 @@ th.show-for-portrait {
     display: table-header-group !important;
   }
 
-  tbody.show-for-portrait,
-  tbody.hide-for-landscape {
+  tbody .show-for-portrait,
+  tbody .hide-for-landscape {
     display: table-row-group !important;
   }
 
@@ -10689,11 +10697,11 @@ thead.hide-for-touch {
   display: table-header-group !important;
 }
 
-tbody.hide-for-touch {
+tbody .hide-for-touch {
   display: table-row-group !important;
 }
 
-.touch tbody.show-for-touch {
+.touch tbody .show-for-touch {
   display: table-row-group !important;
 }
 
@@ -10774,7 +10782,7 @@ th.hide-for-touch {
     display: table-header-group !important;
   }
 
-  tbody.show-for-print {
+  tbody .show-for-print {
     display: table-row-group !important;
   }
 
@@ -10878,7 +10886,7 @@ th.hide-for-touch {
     display: table-header-group !important;
   }
 
-  tbody.show-for-print {
+  tbody .show-for-print {
     display: table-row-group !important;
   }
 
@@ -10938,7 +10946,7 @@ th.hide-for-touch {
 }
 
 .ellipsis[class*="line-"],
-.panel .panel-body .stat-body[class*="line-"] {
+.panel .panel-body .stat-body [class*="line-"] {
   white-space: unset;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -11666,7 +11674,8 @@ a.text-facebook:hover {
 }
 
 .button.green,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -11676,13 +11685,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.green:hover,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.button:hover,
 .button.green:focus,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -11692,13 +11703,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.green.disabled,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.button.disabled,
 .button.green[disabled],
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -11707,7 +11720,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.green.hollow,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -11720,13 +11734,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.green.hollow:hover,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.button.hollow:hover,
 .button.green.hollow:focus,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -11738,7 +11754,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 .button.red,
 #learner-price-table .lessons .button.saved,
 .learner-price-table .lessons .button.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -11751,7 +11768,8 @@ body.booking-view_products
 .button.red:hover,
 #learner-price-table .lessons .button.saved:hover,
 .learner-price-table .lessons .button.saved:hover,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -11760,7 +11778,8 @@ body.booking-view_products
 .button.red:focus,
 #learner-price-table .lessons .button.saved:focus,
 .learner-price-table .lessons .button.saved:focus,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -11773,7 +11792,8 @@ body.booking-view_products
 .button.red.disabled,
 #learner-price-table .lessons .button.disabled.saved,
 .learner-price-table .lessons .button.disabled.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -11782,7 +11802,8 @@ body.booking-view_products
 .button.red[disabled],
 #learner-price-table .lessons .button.saved[disabled],
 .learner-price-table .lessons .button.saved[disabled],
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -11794,7 +11815,8 @@ body.booking-view_products
 .button.red.hollow,
 #learner-price-table .lessons .button.hollow.saved,
 .learner-price-table .lessons .button.hollow.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -11812,7 +11834,8 @@ body.booking-view_products
 .button.red.hollow:hover,
 #learner-price-table .lessons .button.hollow.saved:hover,
 .learner-price-table .lessons .button.hollow.saved:hover,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -11821,7 +11844,8 @@ body.booking-view_products
 .button.red.hollow:focus,
 #learner-price-table .lessons .button.hollow.saved:focus,
 .learner-price-table .lessons .button.hollow.saved:focus,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -11960,28 +11984,28 @@ article.html-content
 }
 
 .button.gray,
-body[class*="blog_posts"] article .updated svg.button {
+body [class*="blog_posts"] article .updated svg.button {
   background-color: #6e7271;
   border-color: #6e7271;
 }
 
 .button.gray:hover,
-body[class*="blog_posts"] article .updated svg.button:hover,
+body [class*="blog_posts"] article .updated svg.button:hover,
 .button.gray:focus,
-body[class*="blog_posts"] article .updated svg.button:focus {
+body [class*="blog_posts"] article .updated svg.button:focus {
   background-color: #616564;
   border-color: #616564;
 }
 
 .button.gray.disabled,
-body[class*="blog_posts"] article .updated svg.button.disabled,
+body [class*="blog_posts"] article .updated svg.button.disabled,
 .button.gray[disabled],
-body[class*="blog_posts"] article .updated svg.button[disabled] {
+body [class*="blog_posts"] article .updated svg.button[disabled] {
   background-color: #878c8b !important;
 }
 
 .button.gray.hollow,
-body[class*="blog_posts"] article .updated svg.button.hollow,
+body [class*="blog_posts"] article .updated svg.button.hollow,
 .button.gray.hollow.disabled,
 .button.gray.hollow[disabled] {
   background-color: transparent;
@@ -11990,31 +12014,32 @@ body[class*="blog_posts"] article .updated svg.button.hollow,
 }
 
 .button.gray.hollow:hover,
-body[class*="blog_posts"] article .updated svg.button.hollow:hover,
+body [class*="blog_posts"] article .updated svg.button.hollow:hover,
 .button.gray.hollow:focus,
-body[class*="blog_posts"] article .updated svg.button.hollow:focus {
+body [class*="blog_posts"] article .updated svg.button.hollow:focus {
   border-color: #616564;
   color: #7b7f7e;
 }
 
 .button.gray-light,
-body[class*="admin"] #main .advance-search .clear-search a svg.button {
+body [class*="admin"] #main .advance-search .clear-search a svg.button {
   background-color: #727272;
   border-color: #727272;
 }
 
 .button.gray-light:hover,
-body[class*="admin"] #main .advance-search .clear-search a svg.button:hover,
+body [class*="admin"] #main .advance-search .clear-search a svg.button:hover,
 .button.gray-light:focus,
-body[class*="admin"] #main .advance-search .clear-search a svg.button:focus {
+body [class*="admin"] #main .advance-search .clear-search a svg.button:focus {
   background-color: #656565;
   border-color: #656565;
 }
 
 .button.gray-light.disabled,
-body[class*="admin"] #main .advance-search .clear-search a svg.button.disabled,
+body [class*="admin"] #main .advance-search .clear-search a svg.button.disabled,
 .button.gray-light[disabled],
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -12024,7 +12049,7 @@ body[class*="admin"]
 }
 
 .button.gray-light.hollow,
-body[class*="admin"] #main .advance-search .clear-search a svg.button.hollow,
+body [class*="admin"] #main .advance-search .clear-search a svg.button.hollow,
 .button.gray-light.hollow.disabled,
 .button.gray-light.hollow[disabled] {
   background-color: transparent;
@@ -12033,14 +12058,16 @@ body[class*="admin"] #main .advance-search .clear-search a svg.button.hollow,
 }
 
 .button.gray-light.hollow:hover,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
   a
   svg.button.hollow:hover,
 .button.gray-light.hollow:focus,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -12219,7 +12246,8 @@ header#header
 }
 
 .button.base,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -12229,13 +12257,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.base:hover,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.button:hover,
 .button.base:focus,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -12245,13 +12275,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.base.disabled,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.button.disabled,
 .button.base[disabled],
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -12260,7 +12292,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.base.hollow,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -12273,13 +12306,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.base.hollow:hover,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.button.hollow:hover,
 .button.base.hollow:focus,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -12448,9 +12483,11 @@ header#header
 }
 
 @media only screen and (max-width: 40em) {
-  body:not(.public_instructors-show):not(.learner_view_instructor-show)
+  body
+    :not(.public_instructors-show):not(.learner_view_instructor-show)
     #add-test-package-btn,
-  body:not(.public_instructors-show):not(.learner_view_instructor-show)
+  body
+    :not(.public_instructors-show):not(.learner_view_instructor-show)
     #add-lesson-btn {
     padding: 1rem;
     margin-bottom: 0;
@@ -12629,7 +12666,8 @@ svg.fill-red-light * {
 .label.red-light,
 #learner-price-table .lessons .red-light.saved,
 .learner-price-table .lessons .red-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -12671,7 +12709,8 @@ svg.fill-green-light * {
 .label.green-light,
 #learner-price-table .lessons .green-light.saved,
 .learner-price-table .lessons .green-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -12713,7 +12752,8 @@ svg.fill-orange-light * {
 .label.orange-light,
 #learner-price-table .lessons .orange-light.saved,
 .learner-price-table .lessons .orange-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -12755,7 +12795,8 @@ svg.fill-blue-light * {
 .label.blue-light,
 #learner-price-table .lessons .blue-light.saved,
 .learner-price-table .lessons .blue-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -12797,7 +12838,8 @@ svg.fill-black * {
 .label.black,
 #learner-price-table .lessons .black.saved,
 .learner-price-table .lessons .black.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -12839,7 +12881,8 @@ svg.fill-blue * {
 .label.blue,
 #learner-price-table .lessons .blue.saved,
 .learner-price-table .lessons .blue.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -12881,7 +12924,8 @@ svg.fill-dark-gray * {
 .label.dark-gray,
 #learner-price-table .lessons .dark-gray.saved,
 .learner-price-table .lessons .dark-gray.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -12923,7 +12967,8 @@ svg.fill-light-blue * {
 .label.light-blue,
 #learner-price-table .lessons .light-blue.saved,
 .learner-price-table .lessons .light-blue.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -12954,7 +12999,8 @@ body.booking-view_products
 }
 
 svg.green *,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -12971,18 +13017,21 @@ svg.fill-green * {
 .label.green,
 #learner-price-table .lessons .green.saved,
 .learner-price-table .lessons .green.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .green.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.label,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -12991,12 +13040,14 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   svg.saved,
 #learner-price-table
   .lessons
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -13005,27 +13056,32 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   svg.saved,
 .learner-price-table
   .lessons
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -13034,7 +13090,8 @@ body.booking-view_products
 }
 
 .alert-box.green,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -13048,7 +13105,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .promo-badge.green,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -13067,7 +13125,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 svg.red *,
 #learner-price-table .lessons svg.saved *,
 .learner-price-table .lessons svg.saved *,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13087,7 +13146,8 @@ svg.fill-red * {
 #learner-price-table .lessons .saved,
 .learner-price-table .lessons .red.saved,
 .learner-price-table .lessons .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13099,7 +13159,8 @@ body.booking-view_products
 .alert-box.red,
 #learner-price-table .lessons .alert-box.saved,
 .learner-price-table .lessons .alert-box.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13116,7 +13177,8 @@ body.booking-view_products
 .promo-badge.red,
 #learner-price-table .lessons .promo-badge.saved,
 .learner-price-table .lessons .promo-badge.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13145,7 +13207,8 @@ svg.fill-white * {
 .label.white,
 #learner-price-table .lessons .white.saved,
 .learner-price-table .lessons .white.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13195,13 +13258,15 @@ nav#sidenav > ul #learner-price-table .lessons svg.saved,
 .learner-price-table .lessons .oil.saved,
 .learner-price-table .lessons nav#sidenav > ul svg.saved,
 nav#sidenav > ul .learner-price-table .lessons svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .oil.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13211,7 +13276,8 @@ body.booking-view_products
   svg.saved,
 nav#sidenav
   > ul
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13245,13 +13311,15 @@ article.html-content
 article.html-content
   #pricing
   #pricing-search-form
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   input.saved[type="submit"],
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13308,7 +13376,8 @@ svg.fill-secondary * {
 .label.secondary,
 #learner-price-table .lessons .secondary.saved,
 .learner-price-table .lessons .secondary.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13339,12 +13408,12 @@ body.booking-view_products
 }
 
 svg.gray *,
-body[class*="blog_posts"] article .updated svg * {
+body [class*="blog_posts"] article .updated svg * {
   stroke: #6e7271 !important;
 }
 
 svg.fill-gray *,
-body.pages-driving_test_package ul.tabs a[aria-selected="false"] svg * {
+body .pages-driving_test_package ul.tabs a[aria-selected="false"] svg * {
   fill: #6e7271 !important;
 }
 
@@ -13352,14 +13421,16 @@ body.pages-driving_test_package ul.tabs a[aria-selected="false"] svg * {
 .label.gray,
 #learner-price-table .lessons .gray.saved,
 .learner-price-table .lessons .gray.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .gray.saved,
-body[class*="blog_posts"] article .updated svg.label,
-body[class*="blog_posts"]
+body [class*="blog_posts"] article .updated svg.label,
+body
+  [class*="blog_posts"]
   article
   .updated
   #learner-price-table
@@ -13367,11 +13438,13 @@ body[class*="blog_posts"]
   svg.saved,
 #learner-price-table
   .lessons
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.saved,
-body[class*="blog_posts"]
+body
+  [class*="blog_posts"]
   article
   .updated
   .learner-price-table
@@ -13379,25 +13452,30 @@ body[class*="blog_posts"]
   svg.saved,
 .learner-price-table
   .lessons
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.saved,
-body[class*="blog_posts"]
+body
+  [class*="blog_posts"]
   article
   .updated
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.saved {
@@ -13405,7 +13483,7 @@ body.booking-view_products
 }
 
 .alert-box.gray,
-body[class*="blog_posts"] article .updated svg.alert-box {
+body [class*="blog_posts"] article .updated svg.alert-box {
   background: #6e7271;
   border-color: #555857;
 }
@@ -13415,7 +13493,7 @@ body[class*="blog_posts"] article .updated svg.alert-box {
 }
 
 .promo-badge.gray,
-body[class*="blog_posts"] article .updated svg.promo-badge {
+body [class*="blog_posts"] article .updated svg.promo-badge {
   background: #6e7271;
 }
 
@@ -13428,7 +13506,7 @@ body[class*="blog_posts"] article .updated svg.promo-badge {
 }
 
 svg.gray-light *,
-body[class*="admin"] #main .advance-search .clear-search a svg * {
+body [class*="admin"] #main .advance-search .clear-search a svg * {
   stroke: #727272 !important;
 }
 
@@ -13440,14 +13518,16 @@ svg.fill-gray-light * {
 .label.gray-light,
 #learner-price-table .lessons .gray-light.saved,
 .learner-price-table .lessons .gray-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .gray-light.saved,
-body[class*="admin"] #main .advance-search .clear-search a svg.label,
-body[class*="admin"]
+body [class*="admin"] #main .advance-search .clear-search a svg.label,
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -13457,13 +13537,15 @@ body[class*="admin"]
   svg.saved,
 #learner-price-table
   .lessons
-  body[class*="admin"]
+  body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
   a
   svg.saved,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -13473,29 +13555,34 @@ body[class*="admin"]
   svg.saved,
 .learner-price-table
   .lessons
-  body[class*="admin"]
+  body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
   a
   svg.saved,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
   a
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="admin"]
+  body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -13505,7 +13592,7 @@ body.booking-view_products
 }
 
 .alert-box.gray-light,
-body[class*="admin"] #main .advance-search .clear-search a svg.alert-box {
+body [class*="admin"] #main .advance-search .clear-search a svg.alert-box {
   background: #727272;
   border-color: #595959;
 }
@@ -13515,7 +13602,7 @@ body[class*="admin"] #main .advance-search .clear-search a svg.alert-box {
 }
 
 .promo-badge.gray-light,
-body[class*="admin"] #main .advance-search .clear-search a svg.promo-badge {
+body [class*="admin"] #main .advance-search .clear-search a svg.promo-badge {
   background: #727272;
 }
 
@@ -13539,7 +13626,8 @@ svg.fill-gray-lighter * {
 .label.gray-lighter,
 #learner-price-table .lessons .gray-lighter.saved,
 .learner-price-table .lessons .gray-lighter.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13581,7 +13669,8 @@ svg.fill-orange * {
 .label.orange,
 #learner-price-table .lessons .orange.saved,
 .learner-price-table .lessons .orange.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13661,13 +13750,15 @@ header#header
   .learner-price-table
   .lessons
   a.saved.button.yellow,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .yellow.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13683,7 +13774,8 @@ header#header
   nav.top-bar
   section.top-bar-section
   ul.nav.right
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13719,9 +13811,11 @@ header#header
 
 .border-border,
 #add-new-lesson-button,
-body:not(.public_instructors-show):not(.learner_view_instructor-show)
+body
+  :not(.public_instructors-show):not(.learner_view_instructor-show)
   #add-test-package-btn,
-body:not(.public_instructors-show):not(.learner_view_instructor-show)
+body
+  :not(.public_instructors-show):not(.learner_view_instructor-show)
   #add-lesson-btn {
   border: 1px solid rgba(0, 0, 0, 0.14) !important;
 }
@@ -13742,7 +13836,8 @@ svg.fill-border * {
 .label.border,
 #learner-price-table .lessons .border.saved,
 .learner-price-table .lessons .border.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13773,7 +13868,8 @@ body.booking-view_products
 }
 
 svg.base *,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -13790,18 +13886,21 @@ svg.fill-base * {
 .label.base,
 #learner-price-table .lessons .base.saved,
 .learner-price-table .lessons .base.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .base.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.label,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -13810,12 +13909,14 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   svg.saved,
 #learner-price-table
   .lessons
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -13824,27 +13925,32 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   svg.saved,
 .learner-price-table
   .lessons
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -13853,7 +13959,8 @@ body.booking-view_products
 }
 
 .alert-box.base,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -13867,7 +13974,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .promo-badge.base,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -13895,7 +14003,8 @@ svg.fill-google * {
 .label.google,
 #learner-price-table .lessons .google.saved,
 .learner-price-table .lessons .google.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13937,7 +14046,8 @@ svg.fill-facebook * {
 .label.facebook,
 #learner-price-table .lessons .facebook.saved,
 .learner-price-table .lessons .facebook.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -13989,7 +14099,8 @@ body.booking-view_products
 strong.label,
 #learner-price-table .lessons strong.saved,
 .learner-price-table .lessons strong.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -14005,14 +14116,16 @@ span.label + span.label,
 #learner-price-table .lessons span.saved + span.saved,
 .learner-price-table .lessons span.label + span.saved,
 .learner-price-table .lessons span.saved + span.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   span.saved
   + span.label,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -14021,7 +14134,8 @@ body.booking-view_products
   .lessons
   span.saved
   + span.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -14030,14 +14144,16 @@ body.booking-view_products
   .lessons
   span.saved
   + span.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   span.label
   + span.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -14050,7 +14166,8 @@ body.booking-view_products
 .label,
 #learner-price-table .lessons .saved,
 .learner-price-table .lessons .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -14378,7 +14495,7 @@ body.booking-view_products
 }
 
 .img-featured,
-body.public_instructors-show .owl-carousel-div .owl-item a img {
+body .public_instructors-show .owl-carousel-div .owl-item a img {
   background: white;
   border: 3px solid white;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -14394,13 +14511,13 @@ body.public_instructors-show .owl-carousel-div .owl-item a img {
 }
 
 .img-circle,
-body.public_instructors-show .owl-carousel-div .owl-item a img {
+body .public_instructors-show .owl-carousel-div .owl-item a img {
   border-radius: 50%;
   overflow: hidden;
 }
 
 .img-circle img,
-body.public_instructors-show .owl-carousel-div .owl-item a img img {
+body .public_instructors-show .owl-carousel-div .owl-item a img img {
   width: 100%;
   height: auto;
 }
@@ -14449,7 +14566,7 @@ footer#footer .main-links a svg *,
 .videoplayer:before,
 .videoplayer:after,
 .img-featured,
-body.public_instructors-show .owl-carousel-div .owl-item a img {
+body .public_instructors-show .owl-carousel-div .owl-item a img {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -ms-transition: all 0.15s ease-in-out;
@@ -14970,7 +15087,7 @@ svg.size-15 {
 }
 
 svg.size-20,
-body[class*="admin"] #main .advance-search .clear-search a svg {
+body [class*="admin"] #main .advance-search .clear-search a svg {
   width: 20px !important;
   height: 20px !important;
 }
@@ -22370,7 +22487,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .ellipsis[class*="line-"],
-.panel .panel-body .stat-body[class*="line-"] {
+.panel .panel-body .stat-body [class*="line-"] {
   white-space: unset;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -22903,7 +23020,7 @@ a.text-facebook:hover {
 }
 
 .ellipsis[class*="line-"],
-.panel .panel-body .stat-body[class*="line-"] {
+.panel .panel-body .stat-body [class*="line-"] {
   white-space: unset;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -23631,7 +23748,8 @@ a.text-facebook:hover {
 }
 
 .button.green,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -23641,13 +23759,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.green:hover,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.button:hover,
 .button.green:focus,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -23657,13 +23777,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.green.disabled,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.button.disabled,
 .button.green[disabled],
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -23672,7 +23794,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.green.hollow,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -23685,13 +23808,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.green.hollow:hover,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.button.hollow:hover,
 .button.green.hollow:focus,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -23703,7 +23828,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 .button.red,
 #learner-price-table .lessons .button.saved,
 .learner-price-table .lessons .button.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -23716,7 +23842,8 @@ body.booking-view_products
 .button.red:hover,
 #learner-price-table .lessons .button.saved:hover,
 .learner-price-table .lessons .button.saved:hover,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -23725,7 +23852,8 @@ body.booking-view_products
 .button.red:focus,
 #learner-price-table .lessons .button.saved:focus,
 .learner-price-table .lessons .button.saved:focus,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -23738,7 +23866,8 @@ body.booking-view_products
 .button.red.disabled,
 #learner-price-table .lessons .button.disabled.saved,
 .learner-price-table .lessons .button.disabled.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -23747,7 +23876,8 @@ body.booking-view_products
 .button.red[disabled],
 #learner-price-table .lessons .button.saved[disabled],
 .learner-price-table .lessons .button.saved[disabled],
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -23759,7 +23889,8 @@ body.booking-view_products
 .button.red.hollow,
 #learner-price-table .lessons .button.hollow.saved,
 .learner-price-table .lessons .button.hollow.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -23777,7 +23908,8 @@ body.booking-view_products
 .button.red.hollow:hover,
 #learner-price-table .lessons .button.hollow.saved:hover,
 .learner-price-table .lessons .button.hollow.saved:hover,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -23786,7 +23918,8 @@ body.booking-view_products
 .button.red.hollow:focus,
 #learner-price-table .lessons .button.hollow.saved:focus,
 .learner-price-table .lessons .button.hollow.saved:focus,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -23925,28 +24058,28 @@ article.html-content
 }
 
 .button.gray,
-body[class*="blog_posts"] article .updated svg.button {
+body [class*="blog_posts"] article .updated svg.button {
   background-color: #6e7271;
   border-color: #6e7271;
 }
 
 .button.gray:hover,
-body[class*="blog_posts"] article .updated svg.button:hover,
+body [class*="blog_posts"] article .updated svg.button:hover,
 .button.gray:focus,
-body[class*="blog_posts"] article .updated svg.button:focus {
+body [class*="blog_posts"] article .updated svg.button:focus {
   background-color: #616564;
   border-color: #616564;
 }
 
 .button.gray.disabled,
-body[class*="blog_posts"] article .updated svg.button.disabled,
+body [class*="blog_posts"] article .updated svg.button.disabled,
 .button.gray[disabled],
-body[class*="blog_posts"] article .updated svg.button[disabled] {
+body [class*="blog_posts"] article .updated svg.button[disabled] {
   background-color: #878c8b !important;
 }
 
 .button.gray.hollow,
-body[class*="blog_posts"] article .updated svg.button.hollow,
+body [class*="blog_posts"] article .updated svg.button.hollow,
 .button.gray.hollow.disabled,
 .button.gray.hollow[disabled] {
   background-color: transparent;
@@ -23955,31 +24088,32 @@ body[class*="blog_posts"] article .updated svg.button.hollow,
 }
 
 .button.gray.hollow:hover,
-body[class*="blog_posts"] article .updated svg.button.hollow:hover,
+body [class*="blog_posts"] article .updated svg.button.hollow:hover,
 .button.gray.hollow:focus,
-body[class*="blog_posts"] article .updated svg.button.hollow:focus {
+body [class*="blog_posts"] article .updated svg.button.hollow:focus {
   border-color: #616564;
   color: #7b7f7e;
 }
 
 .button.gray-light,
-body[class*="admin"] #main .advance-search .clear-search a svg.button {
+body [class*="admin"] #main .advance-search .clear-search a svg.button {
   background-color: #727272;
   border-color: #727272;
 }
 
 .button.gray-light:hover,
-body[class*="admin"] #main .advance-search .clear-search a svg.button:hover,
+body [class*="admin"] #main .advance-search .clear-search a svg.button:hover,
 .button.gray-light:focus,
-body[class*="admin"] #main .advance-search .clear-search a svg.button:focus {
+body [class*="admin"] #main .advance-search .clear-search a svg.button:focus {
   background-color: #656565;
   border-color: #656565;
 }
 
 .button.gray-light.disabled,
-body[class*="admin"] #main .advance-search .clear-search a svg.button.disabled,
+body [class*="admin"] #main .advance-search .clear-search a svg.button.disabled,
 .button.gray-light[disabled],
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -23989,7 +24123,7 @@ body[class*="admin"]
 }
 
 .button.gray-light.hollow,
-body[class*="admin"] #main .advance-search .clear-search a svg.button.hollow,
+body [class*="admin"] #main .advance-search .clear-search a svg.button.hollow,
 .button.gray-light.hollow.disabled,
 .button.gray-light.hollow[disabled] {
   background-color: transparent;
@@ -23998,14 +24132,16 @@ body[class*="admin"] #main .advance-search .clear-search a svg.button.hollow,
 }
 
 .button.gray-light.hollow:hover,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
   a
   svg.button.hollow:hover,
 .button.gray-light.hollow:focus,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -24184,7 +24320,8 @@ header#header
 }
 
 .button.base,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -24194,13 +24331,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.base:hover,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.button:hover,
 .button.base:focus,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -24210,13 +24349,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.base.disabled,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.button.disabled,
 .button.base[disabled],
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -24225,7 +24366,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.base.hollow,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -24238,13 +24380,15 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .button.base.hollow:hover,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.button.hollow:hover,
 .button.base.hollow:focus,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -24413,9 +24557,11 @@ header#header
 }
 
 @media only screen and (max-width: 40em) {
-  body:not(.public_instructors-show):not(.learner_view_instructor-show)
+  body
+    :not(.public_instructors-show):not(.learner_view_instructor-show)
     #add-test-package-btn,
-  body:not(.public_instructors-show):not(.learner_view_instructor-show)
+  body
+    :not(.public_instructors-show):not(.learner_view_instructor-show)
     #add-lesson-btn {
     padding: 1rem;
     margin-bottom: 0;
@@ -24594,7 +24740,8 @@ svg.fill-red-light * {
 .label.red-light,
 #learner-price-table .lessons .red-light.saved,
 .learner-price-table .lessons .red-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -24636,7 +24783,8 @@ svg.fill-green-light * {
 .label.green-light,
 #learner-price-table .lessons .green-light.saved,
 .learner-price-table .lessons .green-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -24678,7 +24826,8 @@ svg.fill-orange-light * {
 .label.orange-light,
 #learner-price-table .lessons .orange-light.saved,
 .learner-price-table .lessons .orange-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -24720,7 +24869,8 @@ svg.fill-blue-light * {
 .label.blue-light,
 #learner-price-table .lessons .blue-light.saved,
 .learner-price-table .lessons .blue-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -24762,7 +24912,8 @@ svg.fill-black * {
 .label.black,
 #learner-price-table .lessons .black.saved,
 .learner-price-table .lessons .black.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -24804,7 +24955,8 @@ svg.fill-blue * {
 .label.blue,
 #learner-price-table .lessons .blue.saved,
 .learner-price-table .lessons .blue.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -24846,7 +24998,8 @@ svg.fill-dark-gray * {
 .label.dark-gray,
 #learner-price-table .lessons .dark-gray.saved,
 .learner-price-table .lessons .dark-gray.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -24888,7 +25041,8 @@ svg.fill-light-blue * {
 .label.light-blue,
 #learner-price-table .lessons .light-blue.saved,
 .learner-price-table .lessons .light-blue.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -24919,7 +25073,8 @@ body.booking-view_products
 }
 
 svg.green *,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -24936,18 +25091,21 @@ svg.fill-green * {
 .label.green,
 #learner-price-table .lessons .green.saved,
 .learner-price-table .lessons .green.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .green.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.label,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -24956,12 +25114,14 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   svg.saved,
 #learner-price-table
   .lessons
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -24970,27 +25130,32 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   svg.saved,
 .learner-price-table
   .lessons
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
   svg.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -24999,7 +25164,8 @@ body.booking-view_products
 }
 
 .alert-box.green,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -25013,7 +25179,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .promo-badge.green,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active
@@ -25032,7 +25199,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 svg.red *,
 #learner-price-table .lessons svg.saved *,
 .learner-price-table .lessons svg.saved *,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25052,7 +25220,8 @@ svg.fill-red * {
 #learner-price-table .lessons .saved,
 .learner-price-table .lessons .red.saved,
 .learner-price-table .lessons .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25064,7 +25233,8 @@ body.booking-view_products
 .alert-box.red,
 #learner-price-table .lessons .alert-box.saved,
 .learner-price-table .lessons .alert-box.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25081,7 +25251,8 @@ body.booking-view_products
 .promo-badge.red,
 #learner-price-table .lessons .promo-badge.saved,
 .learner-price-table .lessons .promo-badge.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25110,7 +25281,8 @@ svg.fill-white * {
 .label.white,
 #learner-price-table .lessons .white.saved,
 .learner-price-table .lessons .white.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25160,13 +25332,15 @@ nav#sidenav > ul #learner-price-table .lessons svg.saved,
 .learner-price-table .lessons .oil.saved,
 .learner-price-table .lessons nav#sidenav > ul svg.saved,
 nav#sidenav > ul .learner-price-table .lessons svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .oil.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25176,7 +25350,8 @@ body.booking-view_products
   svg.saved,
 nav#sidenav
   > ul
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25210,13 +25385,15 @@ article.html-content
 article.html-content
   #pricing
   #pricing-search-form
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   input.saved[type="submit"],
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25273,7 +25450,8 @@ svg.fill-secondary * {
 .label.secondary,
 #learner-price-table .lessons .secondary.saved,
 .learner-price-table .lessons .secondary.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25304,12 +25482,12 @@ body.booking-view_products
 }
 
 svg.gray *,
-body[class*="blog_posts"] article .updated svg * {
+body [class*="blog_posts"] article .updated svg * {
   stroke: #6e7271 !important;
 }
 
 svg.fill-gray *,
-body.pages-driving_test_package ul.tabs a[aria-selected="false"] svg * {
+body .pages-driving_test_package ul.tabs a[aria-selected="false"] svg * {
   fill: #6e7271 !important;
 }
 
@@ -25317,14 +25495,16 @@ body.pages-driving_test_package ul.tabs a[aria-selected="false"] svg * {
 .label.gray,
 #learner-price-table .lessons .gray.saved,
 .learner-price-table .lessons .gray.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .gray.saved,
-body[class*="blog_posts"] article .updated svg.label,
-body[class*="blog_posts"]
+body [class*="blog_posts"] article .updated svg.label,
+body
+  [class*="blog_posts"]
   article
   .updated
   #learner-price-table
@@ -25332,11 +25512,13 @@ body[class*="blog_posts"]
   svg.saved,
 #learner-price-table
   .lessons
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.saved,
-body[class*="blog_posts"]
+body
+  [class*="blog_posts"]
   article
   .updated
   .learner-price-table
@@ -25344,25 +25526,30 @@ body[class*="blog_posts"]
   svg.saved,
 .learner-price-table
   .lessons
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.saved,
-body[class*="blog_posts"]
+body
+  [class*="blog_posts"]
   article
   .updated
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.saved {
@@ -25370,7 +25557,7 @@ body.booking-view_products
 }
 
 .alert-box.gray,
-body[class*="blog_posts"] article .updated svg.alert-box {
+body [class*="blog_posts"] article .updated svg.alert-box {
   background: #6e7271;
   border-color: #555857;
 }
@@ -25380,7 +25567,7 @@ body[class*="blog_posts"] article .updated svg.alert-box {
 }
 
 .promo-badge.gray,
-body[class*="blog_posts"] article .updated svg.promo-badge {
+body [class*="blog_posts"] article .updated svg.promo-badge {
   background: #6e7271;
 }
 
@@ -25393,7 +25580,7 @@ body[class*="blog_posts"] article .updated svg.promo-badge {
 }
 
 svg.gray-light *,
-body[class*="admin"] #main .advance-search .clear-search a svg * {
+body [class*="admin"] #main .advance-search .clear-search a svg * {
   stroke: #727272 !important;
 }
 
@@ -25405,14 +25592,16 @@ svg.fill-gray-light * {
 .label.gray-light,
 #learner-price-table .lessons .gray-light.saved,
 .learner-price-table .lessons .gray-light.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .gray-light.saved,
-body[class*="admin"] #main .advance-search .clear-search a svg.label,
-body[class*="admin"]
+body [class*="admin"] #main .advance-search .clear-search a svg.label,
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -25422,13 +25611,15 @@ body[class*="admin"]
   svg.saved,
 #learner-price-table
   .lessons
-  body[class*="admin"]
+  body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
   a
   svg.saved,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -25438,29 +25629,34 @@ body[class*="admin"]
   svg.saved,
 .learner-price-table
   .lessons
-  body[class*="admin"]
+  body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
   a
   svg.saved,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
   a
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="admin"]
+  body
+  [class*="admin"]
   #main
   .advance-search
   .clear-search
@@ -25470,7 +25666,7 @@ body.booking-view_products
 }
 
 .alert-box.gray-light,
-body[class*="admin"] #main .advance-search .clear-search a svg.alert-box {
+body [class*="admin"] #main .advance-search .clear-search a svg.alert-box {
   background: #727272;
   border-color: #595959;
 }
@@ -25480,7 +25676,7 @@ body[class*="admin"] #main .advance-search .clear-search a svg.alert-box {
 }
 
 .promo-badge.gray-light,
-body[class*="admin"] #main .advance-search .clear-search a svg.promo-badge {
+body [class*="admin"] #main .advance-search .clear-search a svg.promo-badge {
   background: #727272;
 }
 
@@ -25504,7 +25700,8 @@ svg.fill-gray-lighter * {
 .label.gray-lighter,
 #learner-price-table .lessons .gray-lighter.saved,
 .learner-price-table .lessons .gray-lighter.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25546,7 +25743,8 @@ svg.fill-orange * {
 .label.orange,
 #learner-price-table .lessons .orange.saved,
 .learner-price-table .lessons .orange.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25626,13 +25824,15 @@ header#header
   .learner-price-table
   .lessons
   a.saved.button.yellow,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .yellow.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25648,7 +25848,8 @@ header#header
   nav.top-bar
   section.top-bar-section
   ul.nav.right
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25684,9 +25885,11 @@ header#header
 
 .border-border,
 #add-new-lesson-button,
-body:not(.public_instructors-show):not(.learner_view_instructor-show)
+body
+  :not(.public_instructors-show):not(.learner_view_instructor-show)
   #add-test-package-btn,
-body:not(.public_instructors-show):not(.learner_view_instructor-show)
+body
+  :not(.public_instructors-show):not(.learner_view_instructor-show)
   #add-lesson-btn {
   border: 1px solid rgba(0, 0, 0, 0.14) !important;
 }
@@ -25707,7 +25910,8 @@ svg.fill-border * {
 .label.border,
 #learner-price-table .lessons .border.saved,
 .learner-price-table .lessons .border.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25738,7 +25942,8 @@ body.booking-view_products
 }
 
 svg.base *,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -25755,18 +25960,21 @@ svg.fill-base * {
 .label.base,
 #learner-price-table .lessons .base.saved,
 .learner-price-table .lessons .base.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .base.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.label,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -25775,12 +25983,14 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   svg.saved,
 #learner-price-table
   .lessons
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -25789,27 +25999,32 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   svg.saved,
 .learner-price-table
   .lessons
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
   svg.saved,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   svg.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="call_centre"]:not(.call_centre-pay_later)
+  body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -25818,7 +26033,8 @@ body.booking-view_products
 }
 
 .alert-box.base,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -25832,7 +26048,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
 }
 
 .promo-badge.base,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -25860,7 +26077,8 @@ svg.fill-google * {
 .label.google,
 #learner-price-table .lessons .google.saved,
 .learner-price-table .lessons .google.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25902,7 +26120,8 @@ svg.fill-facebook * {
 .label.facebook,
 #learner-price-table .lessons .facebook.saved,
 .learner-price-table .lessons .facebook.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25954,7 +26173,8 @@ body.booking-view_products
 strong.label,
 #learner-price-table .lessons strong.saved,
 .learner-price-table .lessons strong.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25970,14 +26190,16 @@ span.label + span.label,
 #learner-price-table .lessons span.saved + span.saved,
 .learner-price-table .lessons span.label + span.saved,
 .learner-price-table .lessons span.saved + span.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   span.saved
   + span.label,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25986,7 +26208,8 @@ body.booking-view_products
   .lessons
   span.saved
   + span.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -25995,14 +26218,16 @@ body.booking-view_products
   .lessons
   span.saved
   + span.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   span.label
   + span.saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -26015,7 +26240,8 @@ body.booking-view_products
 .label,
 #learner-price-table .lessons .saved,
 .learner-price-table .lessons .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -26343,7 +26569,7 @@ body.booking-view_products
 }
 
 .img-featured,
-body.public_instructors-show .owl-carousel-div .owl-item a img {
+body .public_instructors-show .owl-carousel-div .owl-item a img {
   background: white;
   border: 3px solid white;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -26359,13 +26585,13 @@ body.public_instructors-show .owl-carousel-div .owl-item a img {
 }
 
 .img-circle,
-body.public_instructors-show .owl-carousel-div .owl-item a img {
+body .public_instructors-show .owl-carousel-div .owl-item a img {
   border-radius: 50%;
   overflow: hidden;
 }
 
 .img-circle img,
-body.public_instructors-show .owl-carousel-div .owl-item a img img {
+body .public_instructors-show .owl-carousel-div .owl-item a img img {
   width: 100%;
   height: auto;
 }
@@ -26414,7 +26640,7 @@ footer#footer .main-links a svg *,
 .videoplayer:before,
 .videoplayer:after,
 .img-featured,
-body.public_instructors-show .owl-carousel-div .owl-item a img {
+body .public_instructors-show .owl-carousel-div .owl-item a img {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -ms-transition: all 0.15s ease-in-out;
@@ -26935,7 +27161,7 @@ svg.size-15 {
 }
 
 svg.size-20,
-body[class*="admin"] #main .advance-search .clear-search a svg {
+body [class*="admin"] #main .advance-search .clear-search a svg {
   width: 20px !important;
   height: 20px !important;
 }
@@ -33321,11 +33547,11 @@ body {
   min-height: 100vh;
 }
 
-body.no-scroll .fc-scroller {
+body .no-scroll .fc-scroller {
   overflow-y: hidden !important;
 }
 
-body.no-scroll .reveal-modal {
+body .no-scroll .reveal-modal {
   position: fixed;
   top: 1.875rem !important;
   bottom: 0 !important;
@@ -33334,12 +33560,12 @@ body.no-scroll .reveal-modal {
 }
 
 @media only screen and (max-width: 40em) {
-  body.no-scroll .reveal-modal {
+  body .no-scroll .reveal-modal {
     top: 0 !important;
     padding-bottom: 80px;
   }
 
-  body.no-scroll .reveal-modal form .form-actions {
+  body .no-scroll .reveal-modal form .form-actions {
     margin: 0;
     position: fixed;
     z-index: 9996;
@@ -33354,12 +33580,12 @@ body.no-scroll .reveal-modal {
   }
 }
 
-body.no-scroll .reveal-modal.show-scroll::-webkit-scrollbar {
+body .no-scroll .reveal-modal.show-scroll::-webkit-scrollbar {
   width: 12px;
   background: #ffffff;
 }
 
-body.no-scroll .reveal-modal.show-scroll::-webkit-scrollbar-thumb {
+body .no-scroll .reveal-modal.show-scroll::-webkit-scrollbar-thumb {
   background: #c0c0c0;
   border-radius: 15px;
 }
@@ -33681,7 +33907,7 @@ footer#footer .main-links a svg *,
 .videoplayer:before,
 .videoplayer:after,
 .img-featured,
-body.public_instructors-show .owl-carousel-div .owl-item a img {
+body .public_instructors-show .owl-carousel-div .owl-item a img {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -34335,14 +34561,16 @@ ul.tabs.tab-links li.tab-title.active a {
 #learner-price-table .lessons .panel .panel-heading .saved,
 .panel .panel-heading .learner-price-table .lessons .saved,
 .learner-price-table .lessons .panel .panel-heading .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-heading
   .panel-body
   label.sku-option
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -34376,14 +34604,16 @@ body.booking-view_products
 .learner-price-table .lessons .panel .panel-heading .label.saved,
 .panel .panel-heading .learner-price-table .lessons .saved,
 .learner-price-table .lessons .panel .panel-heading .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-heading
   .panel-body
   label.sku-option
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -34402,14 +34632,16 @@ body.booking-view_products
   #learner-price-table .lessons .panel .panel-heading .saved,
   .panel .panel-heading .learner-price-table .lessons .saved,
   .learner-price-table .lessons .panel .panel-heading .saved,
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-heading
     .panel-body
     label.sku-option
     .saved,
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
@@ -34439,14 +34671,16 @@ body.booking-view_products
   .learner-price-table .lessons .panel .panel-heading .label.saved,
   .panel .panel-heading .learner-price-table .lessons .saved,
   .learner-price-table .lessons .panel .panel-heading .saved,
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-heading
     .panel-body
     label.sku-option
     .saved,
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
@@ -34522,7 +34756,7 @@ body.booking-view_products
   line-height: 1.1;
 }
 
-.panel .panel-body .stat-body.small {
+.panel .panel-body .stat-body .small {
   font-size: 1.75rem;
 }
 
@@ -35024,31 +35258,31 @@ ul.pricing-table li.price small.saved {
   }
 }
 
-body[class*="admin"] {
+body [class*="admin"] {
   color: #212a37;
   line-height: 1.2;
 }
 
-body[class*="admin"] #main {
+body [class*="admin"] #main {
   padding-left: 192px !important;
 }
 
-body[class*="admin"] #main section.section {
+body [class*="admin"] #main section.section {
   padding: 1rem 0.5rem !important;
 }
 
-body[class*="admin"] nav#sidenav {
+body [class*="admin"] nav#sidenav {
   width: 192px;
 }
 
-body[class*="admin"] nav#sidenav ul > li > a {
+body [class*="admin"] nav#sidenav ul > li > a {
   text-align: left;
   padding: 0.4375rem 0.3125rem 0.4375rem 0.5rem;
   font-size: 0.875rem;
   font-weight: 500;
 }
 
-body[class*="admin"] nav#sidenav ul > li > a svg {
+body [class*="admin"] nav#sidenav ul > li > a svg {
   display: inline-block;
   vertical-align: middle;
   width: 1rem;
@@ -35056,30 +35290,30 @@ body[class*="admin"] nav#sidenav ul > li > a svg {
   margin: -0.125rem 0.1875rem 0 0;
 }
 
-body[class*="admin"] nav#sidenav .accordion .accordion-navigation {
+body [class*="admin"] nav#sidenav .accordion .accordion-navigation {
   border: none;
 }
 
-body[class*="admin"] nav#sidenav .accordion .accordion-navigation a:hover {
+body [class*="admin"] nav#sidenav .accordion .accordion-navigation a:hover {
   background: #efefef;
 }
 
-body[class*="admin"] nav#sidenav .accordion .accordion-navigation a:after {
+body [class*="admin"] nav#sidenav .accordion .accordion-navigation a:after {
   display: none !important;
 }
 
-body[class*="admin"] nav#sidenav .accordion .content {
+body [class*="admin"] nav#sidenav .accordion .content {
   background: none;
   padding-left: 3px;
   margin-top: -2px;
   margin-bottom: 2px;
 }
 
-body[class*="admin"] nav#sidenav .accordion .content ul {
+body [class*="admin"] nav#sidenav .accordion .content ul {
   list-style: none;
 }
 
-body[class*="admin"] nav#sidenav .accordion .content ul > li > a {
+body [class*="admin"] nav#sidenav .accordion .content ul > li > a {
   display: block;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -35088,50 +35322,53 @@ body[class*="admin"] nav#sidenav .accordion .content ul > li > a {
   font-weight: 400;
 }
 
-body[class*="admin"] aside.search-filters {
+body [class*="admin"] aside.search-filters {
   width: 380px;
 }
 
-body[class*="admin"] aside.search-filters form .radio,
-body[class*="admin"] aside.search-filters form .checkbox {
+body [class*="admin"] aside.search-filters form .radio,
+body [class*="admin"] aside.search-filters form .checkbox {
   margin-bottom: 0.5rem;
 }
 
-body[class*="admin"] #main .panel .panel-heading .right .button,
-body[class*="admin"] #main .panel .panel-heading .button.right {
+body [class*="admin"] #main .panel .panel-heading .right .button,
+body [class*="admin"] #main .panel .panel-heading .button.right {
   margin: -0.5rem 0 0 !important;
   padding: 0.3125rem 0.625rem !important;
   text-transform: none;
 }
 
-body[class*="admin"] #main .panel .panel-body .button:last-of-type {
+body [class*="admin"] #main .panel .panel-body .button:last-of-type {
   margin-bottom: 0;
 }
 
-body[class*="admin"]:not([class*="call_centre"]) #main .button:not(.tiny) {
+body [class*="admin"]:not([class*="call_centre"]) #main .button:not(.tiny) {
   padding: 0.75rem 1.25rem !important;
 }
 
-body[class*="admin"]:not([class*="call_centre"])
+body
+  [class*="admin"]:not([class*="call_centre"])
   #main
   .button.right:not(.tiny) {
   margin-left: 0.625rem;
 }
 
-body[class*="admin"] table:not(.table-condensed):not(.no-hover) tr:hover {
+body [class*="admin"] table:not(.table-condensed):not(.no-hover) tr:hover {
   background: #f6f6f6;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   table:not(.table-condensed)
   thead
   tr:not([class*="bg-"]):hover {
   background: none !important;
 }
 
-body[class*="admin"] table:not(.table-condensed) tr th small,
-body[class*="admin"] table:not(.table-condensed) tr th .label,
-body[class*="admin"]
+body [class*="admin"] table:not(.table-condensed) tr th small,
+body [class*="admin"] table:not(.table-condensed) tr th .label,
+body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   th
@@ -35140,12 +35377,14 @@ body[class*="admin"]
   .saved,
 #learner-price-table
   .lessons
-  body[class*="admin"]
+  body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   th
   .saved,
-body[class*="admin"]
+body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   th
@@ -35154,34 +35393,40 @@ body[class*="admin"]
   .saved,
 .learner-price-table
   .lessons
-  body[class*="admin"]
+  body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   th
   .saved,
-body[class*="admin"]
+body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   th
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="admin"]
+  body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   th
   .saved,
-body[class*="admin"] table:not(.table-condensed) tr td small,
-body[class*="admin"] table:not(.table-condensed) tr td .label,
-body[class*="admin"]
+body [class*="admin"] table:not(.table-condensed) tr td small,
+body [class*="admin"] table:not(.table-condensed) tr td .label,
+body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   td
@@ -35190,12 +35435,14 @@ body[class*="admin"]
   .saved,
 #learner-price-table
   .lessons
-  body[class*="admin"]
+  body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   td
   .saved,
-body[class*="admin"]
+body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   td
@@ -35204,27 +35451,32 @@ body[class*="admin"]
   .saved,
 .learner-price-table
   .lessons
-  body[class*="admin"]
+  body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   td
   .saved,
-body[class*="admin"]
+body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   td
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body[class*="admin"]
+  body
+  [class*="admin"]
   table:not(.table-condensed)
   tr
   td
@@ -35234,7 +35486,7 @@ body.booking-view_products
   margin: 0 2px 3px 0;
 }
 
-body[class*="admin"] table:not(.table-condensed) tr th {
+body [class*="admin"] table:not(.table-condensed) tr th {
   text-transform: uppercase;
   font-size: 11px;
   line-height: 1.1;
@@ -35243,13 +35495,13 @@ body[class*="admin"] table:not(.table-condensed) tr th {
   max-width: 300px;
 }
 
-body[class*="admin"] table:not(.table-condensed) tr th.highlighted {
+body [class*="admin"] table:not(.table-condensed) tr th.highlighted {
   border-width: 2px 2px 0 2px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.14);
 }
 
-body[class*="admin"] table:not(.table-condensed) tr td {
+body [class*="admin"] table:not(.table-condensed) tr td {
   font-size: 11px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -35257,34 +35509,34 @@ body[class*="admin"] table:not(.table-condensed) tr td {
   line-height: 1.2;
 }
 
-body[class*="admin"] table:not(.table-condensed) tr td.highlighted {
+body [class*="admin"] table:not(.table-condensed) tr td.highlighted {
   border-width: 0 2px 0 2px;
   border-style: solid;
   border-color: #000000;
 }
 
-body[class*="admin"] table:not(.table-condensed) tr td a {
+body [class*="admin"] table:not(.table-condensed) tr td a {
   color: #000000;
 }
 
-body[class*="admin"] table:not(.table-condensed) .f-dropdown {
+body [class*="admin"] table:not(.table-condensed) .f-dropdown {
   -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
-body[class*="admin"] table:not(.table-condensed) .drag-icon {
+body [class*="admin"] table:not(.table-condensed) .drag-icon {
   color: #6e7271;
   cursor: move;
   text-align: center;
 }
 
-body[class*="admin"] table:not(.table-condensed) .drag-icon:hover {
+body [class*="admin"] table:not(.table-condensed) .drag-icon:hover {
   color: #ffc20e;
 }
 
-body[class*="admin"] .fixed-sidebar {
+body [class*="admin"] .fixed-sidebar {
   position: fixed;
   width: 10px;
   height: 110px;
@@ -35303,7 +35555,7 @@ body[class*="admin"] .fixed-sidebar {
   box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.2);
 }
 
-body[class*="admin"] .fixed-sidebar .sidebar-icon {
+body [class*="admin"] .fixed-sidebar .sidebar-icon {
   position: absolute;
   transform: translate(0, -50%);
   left: 0;
@@ -35311,7 +35563,7 @@ body[class*="admin"] .fixed-sidebar .sidebar-icon {
   font-size: 24px;
 }
 
-body[class*="admin"] .fixed-sidebar a.goto-anchor {
+body [class*="admin"] .fixed-sidebar a.goto-anchor {
   display: block;
   color: #000000;
   opacity: 0;
@@ -35319,30 +35571,30 @@ body[class*="admin"] .fixed-sidebar a.goto-anchor {
   white-space: nowrap;
 }
 
-body[class*="admin"] .fixed-sidebar a.goto-anchor:hover {
+body [class*="admin"] .fixed-sidebar a.goto-anchor:hover {
   text-decoration: underline;
 }
 
-body[class*="admin"] .fixed-sidebar:hover {
+body [class*="admin"] .fixed-sidebar:hover {
   width: 285px;
 }
 
-body[class*="admin"] .fixed-sidebar:hover .sidebar-icon {
+body [class*="admin"] .fixed-sidebar:hover .sidebar-icon {
   display: none;
 }
 
-body[class*="admin"] .fixed-sidebar:hover .goto-anchor {
+body [class*="admin"] .fixed-sidebar:hover .goto-anchor {
   opacity: 1;
   width: 100%;
 }
 
-body[class*="admin"] .graph-button-group {
+body [class*="admin"] .graph-button-group {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-body[class*="admin"] .graph-button-group .graph-button {
+body [class*="admin"] .graph-button-group .graph-button {
   color: #ffffff;
   background-color: #dfdfdf;
   border-radius: 6px;
@@ -35352,31 +35604,33 @@ body[class*="admin"] .graph-button-group .graph-button {
   margin: 0 2px 5px 2px;
 }
 
-body[class*="admin"] .graph-button-group .graph-button:hover {
+body [class*="admin"] .graph-button-group .graph-button:hover {
   background-color: #ffc20e;
   transition: none;
   transform: none;
 }
 
-body[class*="admin"] .graph-button-group .graph-button.active {
+body [class*="admin"] .graph-button-group .graph-button.active {
   background-color: #acacac !important;
 }
 
-body[class*="admin"] #main .advance-search {
+body [class*="admin"] #main .advance-search {
   position: relative;
   margin-bottom: 15px;
   max-width: 720px;
 }
 
-body[class*="admin"] #main .advance-search input.select2-search__field {
+body [class*="admin"] #main .advance-search input.select2-search__field {
   width: 100% !important;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search.has-search-icon
   input.main-search-input,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search.has-search-icon
   select.main-search-input {
@@ -35385,7 +35639,7 @@ body[class*="admin"]
   margin-bottom: 0 !important;
 }
 
-body[class*="admin"] #main .advance-search.has-search-icon:before {
+body [class*="admin"] #main .advance-search.has-search-icon:before {
   position: absolute;
   z-index: 3;
   top: 11px;
@@ -35396,29 +35650,34 @@ body[class*="admin"] #main .advance-search.has-search-icon:before {
   color: #727272;
 }
 
-body[class*="admin"] #main .advance-search .f-dropdown .text-right .button {
+body [class*="admin"] #main .advance-search .f-dropdown .text-right .button {
   margin-top: 10px;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .f-dropdown
   .text-right
   .button.hollow.gray,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .f-dropdown
   .text-right
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.hollow,
-body[class*="blog_posts"]
+body
+  [class*="blog_posts"]
   article
   .updated
-  body[class*="admin"]
+  body
+  [class*="admin"]
   #main
   .advance-search
   .f-dropdown
@@ -35428,25 +35687,30 @@ body[class*="blog_posts"]
   box-shadow: none;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .f-dropdown
   .text-right
   .button.hollow.gray:hover,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   .f-dropdown
   .text-right
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.hollow:hover,
-body[class*="blog_posts"]
+body
+  [class*="blog_posts"]
   article
   .updated
-  body[class*="admin"]
+  body
+  [class*="admin"]
   #main
   .advance-search
   .f-dropdown
@@ -35455,18 +35719,18 @@ body[class*="blog_posts"]
   background: #efefef;
 }
 
-body[class*="admin"] #main .advance-search .button:not(.tiny) {
+body [class*="admin"] #main .advance-search .button:not(.tiny) {
   text-transform: none;
   padding: 10px !important;
 }
 
-body[class*="admin"] #main .advance-search .clear-search {
+body [class*="admin"] #main .advance-search .clear-search {
   position: absolute;
   top: 0;
   right: 130px;
 }
 
-body[class*="admin"] #main .advance-search .clear-search a {
+body [class*="admin"] #main .advance-search .clear-search a {
   margin-top: 7px;
   display: inline-block;
   border-radius: 100%;
@@ -35475,7 +35739,7 @@ body[class*="admin"] #main .advance-search .clear-search a {
   padding: 5px;
 }
 
-body[class*="admin"] #main .advance-search .clear-search a:hover {
+body [class*="admin"] #main .advance-search .clear-search a:hover {
   background: #efefef;
   -webkit-transform: none;
   -moz-transform: none;
@@ -35483,7 +35747,7 @@ body[class*="admin"] #main .advance-search .clear-search a:hover {
   transform: none;
 }
 
-body[class*="admin"] #main .advance-search a.more-filters {
+body [class*="admin"] #main .advance-search a.more-filters {
   position: absolute;
   top: 0;
   right: 0;
@@ -35493,11 +35757,12 @@ body[class*="admin"] #main .advance-search a.more-filters {
   font-size: 14px;
 }
 
-body[class*="admin"] #main .advance-search a.more-filters svg * {
+body [class*="admin"] #main .advance-search a.more-filters svg * {
   fill: #727272;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35513,7 +35778,8 @@ body[class*="admin"]
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35521,12 +35787,14 @@ body[class*="admin"]
   outline: none;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown:before,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35534,25 +35802,29 @@ body[class*="admin"]
   display: none;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   label,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   select,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   input:not(.button),
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35563,19 +35835,22 @@ body[class*="admin"]
   border-radius: 0 !important;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   select,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   input:not(.button),
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35594,19 +35869,22 @@ body[class*="admin"]
   min-height: 0;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   select:focus,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   input:not(.button):focus,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35615,19 +35893,22 @@ body[class*="admin"]
   border-color: #ffc20e;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   select.not_chosen,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   input.not_chosen:not(.button),
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35636,21 +35917,24 @@ body[class*="admin"]
   color: #ccc;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   select
   .select2-search__field,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   input:not(.button)
   .select2-search__field,
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35663,7 +35947,8 @@ body[class*="admin"]
   height: auto !important;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35672,7 +35957,8 @@ body[class*="admin"]
   height: auto !important;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35682,7 +35968,8 @@ body[class*="admin"]
   margin: 0 5px 5px 0;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35692,13 +35979,15 @@ body[class*="admin"]
   padding-bottom: 0 !important;
 }
 
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
   + #more-filters.f-dropdown
   input[type="radio"],
-body[class*="admin"]
+body
+  [class*="admin"]
   #main
   .advance-search
   a.more-filters
@@ -35708,14 +35997,14 @@ body[class*="admin"]
   margin-top: 6px;
 }
 
-body[class*="admin"] #main .advance-search .label-column {
+body [class*="admin"] #main .advance-search .label-column {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   height: 1.4rem !important;
   display: table;
 }
 
-body[class*="admin"] #main .advance-search .label-column > label {
+body [class*="admin"] #main .advance-search .label-column > label {
   display: table-cell;
   vertical-align: middle;
   color: #454545;
@@ -35723,7 +36012,7 @@ body[class*="admin"] #main .advance-search .label-column > label {
   font-weight: normal;
 }
 
-body[class*="admin"] .f-dropdown.full-width {
+body [class*="admin"] .f-dropdown.full-width {
   max-width: none;
   left: -5px !important;
   right: -5px !important;
@@ -35736,26 +36025,26 @@ body[class*="admin"] .f-dropdown.full-width {
   box-shadow: 0 0 200px rgba(0, 0, 0, 0.4);
 }
 
-body[class*="admin"] .f-dropdown.full-width:before,
-body[class*="admin"] .f-dropdown.full-width:after {
+body [class*="admin"] .f-dropdown.full-width:before,
+body [class*="admin"] .f-dropdown.full-width:after {
   display: none;
 }
 
-body[class*="admin"] .f-dropdown.full-width .label-wrap {
+body [class*="admin"] .f-dropdown.full-width .label-wrap {
   font-weight: 500;
   margin-top: 15px;
 }
 
-body[class*="admin"] .f-dropdown.full-width .field-wrap.radio_buttons {
+body [class*="admin"] .f-dropdown.full-width .field-wrap.radio_buttons {
   margin-top: 9px;
   margin-bottom: 20px;
 }
 
-body[class*="admin"] .f-dropdown.full-width .field-wrap.radio_buttons .radio {
+body [class*="admin"] .f-dropdown.full-width .field-wrap.radio_buttons .radio {
   margin-bottom: 0;
 }
 
-body[class*="admin"] .timeline {
+body [class*="admin"] .timeline {
   position: relative;
   width: 660px;
   margin: 0 auto;
@@ -35764,7 +36053,7 @@ body[class*="admin"] .timeline {
   list-style-type: none;
 }
 
-body[class*="admin"] .timeline:before {
+body [class*="admin"] .timeline:before {
   position: absolute;
   left: 50%;
   top: 0;
@@ -35777,11 +36066,11 @@ body[class*="admin"] .timeline:before {
   z-index: 5;
 }
 
-body[class*="admin"] .timeline li {
+body [class*="admin"] .timeline li {
   padding: 15px 0;
 }
 
-body[class*="admin"] .timeline li:after {
+body [class*="admin"] .timeline li:after {
   content: "";
   display: block;
   height: 0;
@@ -35789,7 +36078,7 @@ body[class*="admin"] .timeline li:after {
   visibility: hidden;
 }
 
-body[class*="admin"] .timeline li .flag {
+body [class*="admin"] .timeline li .flag {
   position: relative;
   display: inline;
   background: #efefef;
@@ -35803,14 +36092,14 @@ body[class*="admin"] .timeline li .flag {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
-body[class*="admin"] .timeline li .direction-l {
+body [class*="admin"] .timeline li .direction-l {
   position: relative;
   width: 296px;
   float: left;
   text-align: right;
 }
 
-body[class*="admin"] .timeline li .direction-l .flag:before {
+body [class*="admin"] .timeline li .direction-l .flag:before {
   position: absolute;
   top: 50%;
   right: -40px;
@@ -35825,13 +36114,13 @@ body[class*="admin"] .timeline li .direction-l .flag:before {
   z-index: 10;
 }
 
-body[class*="admin"] .timeline li .direction-r {
+body [class*="admin"] .timeline li .direction-r {
   position: relative;
   width: 296px;
   float: right;
 }
 
-body[class*="admin"] .timeline li .direction-r .flag:before {
+body [class*="admin"] .timeline li .direction-r .flag:before {
   position: absolute;
   top: 50%;
   right: -40px;
@@ -35847,13 +36136,13 @@ body[class*="admin"] .timeline li .direction-r .flag:before {
   left: -40px;
 }
 
-body[class*="admin"] .timeline li .flag-wrapper {
+body [class*="admin"] .timeline li .flag-wrapper {
   position: relative;
   display: inline-block;
   text-align: center;
 }
 
-body[class*="admin"] .timeline li .time-wrapper {
+body [class*="admin"] .timeline li .time-wrapper {
   display: inline;
   line-height: 1em;
   font-size: 0.66666em;
@@ -35861,32 +36150,32 @@ body[class*="admin"] .timeline li .time-wrapper {
   vertical-align: middle;
 }
 
-body[class*="admin"] .timeline li .direction-l .time-wrapper {
+body [class*="admin"] .timeline li .direction-l .time-wrapper {
   float: left;
 }
 
-body[class*="admin"] .timeline li .direction-r .time-wrapper {
+body [class*="admin"] .timeline li .direction-r .time-wrapper {
   float: right;
 }
 
-body[class*="admin"] .timeline li .direction-r .desc {
+body [class*="admin"] .timeline li .direction-r .desc {
   margin: 1em 0 0 0.75em;
 }
 
-body[class*="admin"] .timeline li .time {
+body [class*="admin"] .timeline li .time {
   display: inline-block;
   padding: 5px;
   background: #efefef;
 }
 
-body[class*="admin"] .timeline li .desc {
+body [class*="admin"] .timeline li .desc {
   margin: 1em 0.75em 0 0;
   font-size: 0.77777em;
   font-style: italic;
   line-height: 1.5em;
 }
 
-body[class*="admin"] #main .main-content .inherit-height-container {
+body [class*="admin"] #main .main-content .inherit-height-container {
   height: calc(100vh - 70px - 75px - 50px);
 }
 
@@ -35921,19 +36210,20 @@ body[class*="admin"] #main .main-content .inherit-height-container {
   font-weight: bold;
 }
 
-body.app header#header nav.top-bar li a:not(.button) {
+body .app header#header nav.top-bar li a:not(.button) {
   font-weight: 500 !important;
 }
 
-body.app #instructor_create_note {
+body .app #instructor_create_note {
   margin-bottom: 40px;
 }
 
-body.app #instructor_create_note:empty {
+body .app #instructor_create_note:empty {
   margin-bottom: 0;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main {
@@ -35941,7 +36231,8 @@ body.app:not(.public_instructors-index):not(
   padding-left: 120px;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -35951,7 +36242,8 @@ body.app:not(.public_instructors-index):not(
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -35969,7 +36261,8 @@ body.app:not(.public_instructors-index):not(
 }
 
 @media only screen and (min-width: 40.0625em) {
-  body.app:not(.public_instructors-index):not(
+  body
+    .app:not(.public_instructors-index):not(
       .public_instructors-instructor_time_base_index
     )
     #main
@@ -35977,7 +36270,8 @@ body.app:not(.public_instructors-index):not(
     min-height: calc(100vh - 70px - 75px);
   }
 
-  body.app:not(.public_instructors-index):not(
+  body
+    .app:not(.public_instructors-index):not(
       .public_instructors-instructor_time_base_index
     )
     #main
@@ -35986,7 +36280,8 @@ body.app:not(.public_instructors-index):not(
   }
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -35994,7 +36289,8 @@ body.app:not(.public_instructors-index):not(
   padding: 2rem 1rem;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36005,7 +36301,8 @@ body.app:not(.public_instructors-index):not(
   list-style: none;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36015,7 +36312,8 @@ body.app:not(.public_instructors-index):not(
   padding-left: 35px;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36024,7 +36322,8 @@ body.app:not(.public_instructors-index):not(
   padding-bottom: 20px;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36039,7 +36338,8 @@ body.app:not(.public_instructors-index):not(
   border-left: 1px dashed rgba(0, 0, 0, 0.14);
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36056,13 +36356,15 @@ body.app:not(.public_instructors-index):not(
   background-color: #c0c0c0;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
   .item.yellow::before,
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36078,7 +36380,8 @@ header#header
   nav.top-bar
   section.top-bar-section
   ul.nav.right
-  body.app:not(.public_instructors-index):not(
+  body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36087,13 +36390,15 @@ header#header
   border-left: 1px solid #ffc20e;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
   .item.yellow::after,
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36109,7 +36414,8 @@ header#header
   nav.top-bar
   section.top-bar-section
   ul.nav.right
-  body.app:not(.public_instructors-index):not(
+  body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36118,14 +36424,16 @@ header#header
   background-color: #ffc20e;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
   .item.yellow
   .label,
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36142,14 +36450,16 @@ header#header
   nav.top-bar
   section.top-bar-section
   ul.nav.right
-  body.app:not(.public_instructors-index):not(
+  body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
   a.item.button.yellow
   .label,
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36160,14 +36470,16 @@ body.app:not(.public_instructors-index):not(
   .saved,
 #learner-price-table
   .lessons
-  body.app:not(.public_instructors-index):not(
+  body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
   .item.yellow
   .saved,
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36178,31 +36490,36 @@ body.app:not(.public_instructors-index):not(
   .saved,
 .learner-price-table
   .lessons
-  body.app:not(.public_instructors-index):not(
+  body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
   .item.yellow
   .saved,
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
   .item.yellow
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
-  body.app:not(.public_instructors-index):not(
+  body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36212,25 +36529,30 @@ body.booking-view_products
   color: #212a37;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
   .item.gray::before,
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.item::before,
-body[class*="blog_posts"]
+body
+  [class*="blog_posts"]
   article
   .updated
-  body.app:not(.public_instructors-index):not(
+  body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36239,25 +36561,30 @@ body[class*="blog_posts"]
   border-left: 1px solid #6e7271;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
   .item.gray::after,
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
   .v-progress-bar
-  body[class*="blog_posts"]
+  body
+  [class*="blog_posts"]
   article
   .updated
   svg.item::after,
-body[class*="blog_posts"]
+body
+  [class*="blog_posts"]
   article
   .updated
-  body.app:not(.public_instructors-index):not(
+  body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #main
@@ -36266,7 +36593,8 @@ body[class*="blog_posts"]
   background-color: #6e7271;
 }
 
-body.app:not(.public_instructors-index):not(
+body
+  .app:not(.public_instructors-index):not(
     .public_instructors-instructor_time_base_index
   )
   #learner-price-table {
@@ -36471,20 +36799,23 @@ body.app:not(.public_instructors-index):not(
 
 @media only screen and (max-width: 40em),
   only screen and (min-width: 40.0625em) and (max-width: 64em) {
-  body.app:not(.public_instructors-index):not(
+  body
+    .app:not(.public_instructors-index):not(
       .public_instructors-instructor_time_base_index
     ) {
     padding-top: 0;
   }
 
-  body.app:not(.public_instructors-index):not(
+  body
+    .app:not(.public_instructors-index):not(
       .public_instructors-instructor_time_base_index
     )
     #main {
     padding-left: 0 !important;
   }
 
-  body.app:not(.public_instructors-index):not(
+  body
+    .app:not(.public_instructors-index):not(
       .public_instructors-instructor_time_base_index
     )
     #main
@@ -36493,31 +36824,31 @@ body.app:not(.public_instructors-index):not(
   }
 }
 
-body[class*="blog_posts"] article .excerpt,
-body[class*="blog_posts"] article .excerpt * {
+body [class*="blog_posts"] article .excerpt,
+body [class*="blog_posts"] article .excerpt * {
   margin-bottom: 5px;
 }
 
-body[class*="blog_posts"] article .author,
-body[class*="blog_posts"] article .updated {
+body [class*="blog_posts"] article .author,
+body [class*="blog_posts"] article .updated {
   color: #6e7271;
   font-size: 0.8125rem;
   letter-spacing: 1px;
   font-weight: 300;
 }
 
-body[class*="blog_posts"] article .updated svg {
+body [class*="blog_posts"] article .updated svg {
   display: inline-block;
   vertical-align: middle;
   margin: -3px 2px 0 15px;
 }
 
-body[class*="blog_posts"] article .featured-image {
+body [class*="blog_posts"] article .featured-image {
   margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 64.0625em) {
-  body[class*="blog_posts"] article .featured-image {
+  body [class*="blog_posts"] article .featured-image {
     float: right;
     width: 50%;
     height: auto;
@@ -36525,19 +36856,19 @@ body[class*="blog_posts"] article .featured-image {
   }
 }
 
-body[class*="blog_posts"] article .cta-banner {
+body [class*="blog_posts"] article .cta-banner {
   display: block;
   margin: 30px -20px;
 }
 
 @media only screen and (min-width: 64.0625em) {
-  body[class*="blog_posts"] article .cta-banner {
+  body [class*="blog_posts"] article .cta-banner {
     margin-left: -30px;
     margin-right: -30px;
   }
 }
 
-body[class*="blog_posts"] article .cta-banner img {
+body [class*="blog_posts"] article .cta-banner img {
   width: 100%;
   height: auto;
 }
@@ -36810,39 +37141,39 @@ body[class*="blog_posts"] article .cta-banner img {
     font-size: 14px;
   }
 
-  body.app.calendar-index .fc .fc-toolbar .fc-center:before {
+  body .app.calendar-index .fc .fc-toolbar .fc-center:before {
     display: block;
     content: "";
     clear: both;
   }
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) table tr th,
-body[class*="call_centre"]:not(.call_centre-pay_later) table tr td {
+body [class*="call_centre"]:not(.call_centre-pay_later) table tr th,
+body [class*="call_centre"]:not(.call_centre-pay_later) table tr td {
   vertical-align: top;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) p.empty {
+body [class*="call_centre"]:not(.call_centre-pay_later) p.empty {
   text-align: center;
   padding: 1.25rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) #main {
+body [class*="call_centre"]:not(.call_centre-pay_later) #main {
   padding-left: 360px !important;
   padding-right: 360px !important;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) #main,
-body[class*="call_centre"]:not(.call_centre-pay_later) #main .main-content {
+body [class*="call_centre"]:not(.call_centre-pay_later) #main,
+body [class*="call_centre"]:not(.call_centre-pay_later) #main .main-content {
   min-height: 100vh !important;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) .action-bar-div,
-body[class*="call_centre"]:not(.call_centre-pay_later) .action-bar {
+body [class*="call_centre"]:not(.call_centre-pay_later) .action-bar-div,
+body [class*="call_centre"]:not(.call_centre-pay_later) .action-bar {
   min-height: 127px;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) .action-bar {
+body [class*="call_centre"]:not(.call_centre-pay_later) .action-bar {
   position: fixed;
   z-index: 4;
   top: 0;
@@ -36852,40 +37183,45 @@ body[class*="call_centre"]:not(.call_centre-pay_later) .action-bar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) .action-bar > .row {
+body [class*="call_centre"]:not(.call_centre-pay_later) .action-bar > .row {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
   width: auto;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #call-centre-filter-field.action-bar {
   left: 361px;
   right: 0;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #call-centre-filter-field.action-bar
   form.disabled {
   pointer-events: none;
   opacity: 0.3;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) .action-bar input,
-body[class*="call_centre"]:not(.call_centre-pay_later) .action-bar select,
-body[class*="call_centre"]:not(.call_centre-pay_later) .action-bar .select2 {
+body [class*="call_centre"]:not(.call_centre-pay_later) .action-bar input,
+body [class*="call_centre"]:not(.call_centre-pay_later) .action-bar select,
+body [class*="call_centre"]:not(.call_centre-pay_later) .action-bar .select2 {
   margin-bottom: 0 !important;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   .action-bar
   .right.button {
   margin-top: -2px;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   .call-centre-close-instructor-info,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #reset-product-filter:before {
   position: absolute;
   font-family: "FontAwesome";
@@ -36896,35 +37232,39 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   font-size: 1.25rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #reset-product-filter:before {
   top: 0.3125rem;
   right: 0;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) aside#nav-list,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body [class*="call_centre"]:not(.call_centre-pay_later) aside#nav-list,
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #instructor-search-container,
-body[class*="call_centre"]:not(.call_centre-pay_later) #products-list {
+body [class*="call_centre"]:not(.call_centre-pay_later) #products-list {
   position: fixed;
   z-index: 3;
   top: 125px;
   bottom: 70px;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) aside#nav-list {
+body [class*="call_centre"]:not(.call_centre-pay_later) aside#nav-list {
   left: 0;
   width: 360px;
   background: white;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   .action-bar {
   width: 360px;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-search-container {
   width: 100%;
@@ -36932,7 +37272,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   overflow-y: scroll;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-search-container
   [id*="learner-info-"] {
@@ -36946,14 +37287,16 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   font-size: 0.875rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-search-container
   [id*="learner-info-"]:hover {
   border-left: 4px solid #ffc20e;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-details
   > section {
@@ -36967,12 +37310,14 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   overflow-y: scroll;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-details
   > section
   .details,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-details
   > section
@@ -36980,7 +37325,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   background: #efefef;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-details
   > section
@@ -36990,12 +37336,14 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   padding: 0.3125rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-details
   > section
   h5,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-details
   > section
@@ -37003,7 +37351,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   margin-bottom: 0.625rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   aside#nav-list
   #learner-details
   > section
@@ -37012,9 +37361,10 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   width: 11.25rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #instructor-search-container,
-body[class*="call_centre"]:not(.call_centre-pay_later) #products-list {
+body [class*="call_centre"]:not(.call_centre-pay_later) #products-list {
   left: auto;
   right: 0;
   width: 420px;
@@ -37023,22 +37373,26 @@ body[class*="call_centre"]:not(.call_centre-pay_later) #products-list {
   overflow-y: scroll;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #instructor-search-container
   > section,
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #products-list
   > section {
   width: 100%;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #instructor-search-container
   .call-centre-error-message {
   margin: 0 -0.9375rem 1.25rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #instructor-search-container
   .call-centre-instructor-info {
   -webkit-transition: all 0.2s ease;
@@ -37050,19 +37404,21 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #instructor-search-container
   .call-centre-instructor-info:not(.active):hover {
   border-left: 4px solid #ffc20e;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #instructor-search-container
   .call-centre-instructor-info.active {
   background: #efefef;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) #products-list {
+body [class*="call_centre"]:not(.call_centre-pay_later) #products-list {
   border-left: 1px solid rgba(0, 0, 0, 0.14);
   border-right: 1px solid rgba(0, 0, 0, 0.14);
   left: 360px;
@@ -37070,19 +37426,21 @@ body[class*="call_centre"]:not(.call_centre-pay_later) #products-list {
   width: auto;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) #products-list .tabs {
+body [class*="call_centre"]:not(.call_centre-pay_later) #products-list .tabs {
   padding-left: 0.9375rem;
   padding-top: 0.625rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #products-list
   .tabs-content
   .content {
   padding: 0 0.9375rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #products-list
   .tabs-content
   .content
@@ -37093,7 +37451,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   margin: 0;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #products-list
   .tabs-content
   .content
@@ -37103,7 +37462,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   margin-top: 2px;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #products-list
   .tabs-content
   .content
@@ -37111,7 +37471,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   background: #efefef;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #products-list
   .tabs-content
   .content
@@ -37122,7 +37483,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   margin-top: -0.25rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #products-list
   .tabs-content
   .content
@@ -37131,8 +37493,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   display: none;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) #confirm-lesson,
-body[class*="call_centre"]:not(.call_centre-pay_later) #add-lesson {
+body [class*="call_centre"]:not(.call_centre-pay_later) #confirm-lesson,
+body [class*="call_centre"]:not(.call_centre-pay_later) #add-lesson {
   position: fixed;
   z-index: 10;
   padding: 0.9375rem 1.25rem;
@@ -37142,32 +37504,36 @@ body[class*="call_centre"]:not(.call_centre-pay_later) #add-lesson {
   height: 70px;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #confirm-lesson
   .call-centre-pricing {
   line-height: 1.2;
   font-size: 1.125rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #confirm-lesson
   .call-centre-pricing
   li {
   vertical-align: top;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later) #add-lesson {
+body [class*="call_centre"]:not(.call_centre-pay_later) #add-lesson {
   bottom: 70px;
   left: 360px;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list {
   margin: 0.625rem 0 0;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li {
@@ -37175,7 +37541,8 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   margin-right: 1.25rem;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li
@@ -37185,14 +37552,16 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   margin: -0.25rem 0.3125rem 0 0;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.active {
   color: #2fa750;
 }
 
-body[class*="call_centre"]:not(.call_centre-pay_later)
+body
+  [class*="call_centre"]:not(.call_centre-pay_later)
   #add-lesson
   #option-list
   li.error-messages {
@@ -37201,14 +37570,16 @@ body[class*="call_centre"]:not(.call_centre-pay_later)
   margin-top: -0.625rem;
 }
 
-body.pages-driving_test_package
+body
+  .pages-driving_test_package
   section#search-form
   #driving-test-location-dropdown
   label {
   display: none;
 }
 
-body.pages-driving_test_package
+body
+  .pages-driving_test_package
   section#search-form
   #driving-test-location-dropdown
   .input-group {
@@ -37219,12 +37590,12 @@ body.pages-driving_test_package
 }
 
 @media only screen and (max-width: 40em) {
-  body.pages-driving_test_package section#search-form {
+  body .pages-driving_test_package section#search-form {
     padding: 0;
   }
 }
 
-body.pages-driving_test_package ul.tabs {
+body .pages-driving_test_package ul.tabs {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -ms-box-shadow: none;
@@ -37232,7 +37603,7 @@ body.pages-driving_test_package ul.tabs {
   border: none;
 }
 
-body.pages-driving_test_package ul.tabs a[aria-selected="false"] {
+body .pages-driving_test_package ul.tabs a[aria-selected="false"] {
   zoom: 1;
   filter: alpha(opacity=30);
   opacity: 0.3;
@@ -37241,8 +37612,8 @@ body.pages-driving_test_package ul.tabs a[aria-selected="false"] {
   color: #6e7271 !important;
 }
 
-body.public_instructors-index #tabs-search-page .tab-title a,
-body.learner_view_instructor-index #tabs-search-page .tab-title a {
+body .public_instructors-index #tabs-search-page .tab-title a,
+body .learner_view_instructor-index #tabs-search-page .tab-title a {
   border-radius: 6px;
   padding: 0.75rem 0.8125rem;
   font-size: 0.875rem;
@@ -37252,128 +37623,164 @@ body.learner_view_instructor-index #tabs-search-page .tab-title a {
   margin-bottom: 0 !important;
 }
 
-body.public_instructors-index #tabs-search-page .tab-title.active a,
-body.learner_view_instructor-index #tabs-search-page .tab-title.active a {
+body .public_instructors-index #tabs-search-page .tab-title.active a,
+body .learner_view_instructor-index #tabs-search-page .tab-title.active a {
   background: #212a37 !important;
   color: #ffffff !important;
 }
 
-body.public_instructors-index #date-range-filter-field .button.tiny,
-body.learner_view_instructor-index #date-range-filter-field .button.tiny {
+body .public_instructors-index #date-range-filter-field .button.tiny,
+body .learner_view_instructor-index #date-range-filter-field .button.tiny {
   padding: 10px 15px;
   margin-bottom: 0 !important;
 }
 
 @media only screen and (max-width: 40em) {
-  body.public_instructors-index #date-range-filter-field #auth-type-picker,
-  body.public_instructors-index #date-range-filter-field #time-range-picker,
-  body.public_instructors-index #date-range-filter-field #date-range-picker,
-  body.public_instructors-index #date-range-filter-field #clear-field,
-  body.learner_view_instructor-index #date-range-filter-field #auth-type-picker,
-  body.learner_view_instructor-index
+  body .public_instructors-index #date-range-filter-field #auth-type-picker,
+  body .public_instructors-index #date-range-filter-field #time-range-picker,
+  body .public_instructors-index #date-range-filter-field #date-range-picker,
+  body .public_instructors-index #date-range-filter-field #clear-field,
+  body
+    .learner_view_instructor-index
+    #date-range-filter-field
+    #auth-type-picker,
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #time-range-picker,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #date-range-picker,
-  body.learner_view_instructor-index #date-range-filter-field #clear-field {
+  body .learner_view_instructor-index #date-range-filter-field #clear-field {
     display: flex;
     flex-direction: row;
     margin: 0 0 20px;
   }
 
-  body.public_instructors-index #date-range-filter-field #auth-type-picker > *,
-  body.public_instructors-index #date-range-filter-field #time-range-picker > *,
-  body.public_instructors-index #date-range-filter-field #date-range-picker > *,
-  body.public_instructors-index #date-range-filter-field #clear-field > *,
-  body.learner_view_instructor-index
-    #date-range-filter-field
-    #auth-type-picker
-    > *,
-  body.learner_view_instructor-index
+  body .public_instructors-index #date-range-filter-field #auth-type-picker > *,
+  body
+    .public_instructors-index
     #date-range-filter-field
     #time-range-picker
     > *,
-  body.learner_view_instructor-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #date-range-picker
     > *,
-  body.learner_view_instructor-index #date-range-filter-field #clear-field > * {
+  body .public_instructors-index #date-range-filter-field #clear-field > *,
+  body
+    .learner_view_instructor-index
+    #date-range-filter-field
+    #auth-type-picker
+    > *,
+  body
+    .learner_view_instructor-index
+    #date-range-filter-field
+    #time-range-picker
+    > *,
+  body
+    .learner_view_instructor-index
+    #date-range-filter-field
+    #date-range-picker
+    > *,
+  body
+    .learner_view_instructor-index
+    #date-range-filter-field
+    #clear-field
+    > * {
     flex: 1;
     padding-left: 10px;
   }
 
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #auth-type-picker
     > *:first-child,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #time-range-picker
     > *:first-child,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #date-range-picker
     > *:first-child,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #clear-field
     > *:first-child,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #auth-type-picker
     > *:first-child,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #time-range-picker
     > *:first-child,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #date-range-picker
     > *:first-child,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #clear-field
     > *:first-child {
     padding-left: 0;
   }
 
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #auth-type-picker
     > *
     .button.tiny,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #time-range-picker
     > *
     .button.tiny,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #date-range-picker
     > *
     .button.tiny,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #clear-field
     > *
     .button.tiny,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #auth-type-picker
     > *
     .button.tiny,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #time-range-picker
     > *
     .button.tiny,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #date-range-picker
     > *
     .button.tiny,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #clear-field
     > *
@@ -37383,32 +37790,39 @@ body.learner_view_instructor-index #date-range-filter-field .button.tiny {
     padding-right: 5px;
   }
 
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #auth-type-picker
     > strong,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #time-range-picker
     > strong,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #date-range-filter-field
     #date-range-picker
     > strong,
-  body.public_instructors-index #date-range-filter-field #clear-field > strong,
-  body.learner_view_instructor-index
+  body .public_instructors-index #date-range-filter-field #clear-field > strong,
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #auth-type-picker
     > strong,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #time-range-picker
     > strong,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #date-range-picker
     > strong,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #date-range-filter-field
     #clear-field
     > strong {
@@ -37416,14 +37830,14 @@ body.learner_view_instructor-index #date-range-filter-field .button.tiny {
     padding-top: 5px;
   }
 
-  body.public_instructors-index #date-range-filter-field #clear-field,
-  body.learner_view_instructor-index #date-range-filter-field #clear-field {
+  body .public_instructors-index #date-range-filter-field #clear-field,
+  body .learner_view_instructor-index #date-range-filter-field #clear-field {
     margin-bottom: 0;
   }
 }
 
-body.public_instructors-index #date-filter-field #clear-filter[disabled],
-body.learner_view_instructor-index #date-filter-field #clear-filter[disabled] {
+body .public_instructors-index #date-filter-field #clear-filter[disabled],
+body .learner_view_instructor-index #date-filter-field #clear-filter[disabled] {
   background: white !important;
   border-color: #727272 !important;
   color: #727272 !important;
@@ -37433,14 +37847,14 @@ body.learner_view_instructor-index #date-filter-field #clear-filter[disabled] {
 }
 
 @media only screen and (min-width: 40.0625em) {
-  body.public_instructors-index #auth-type-picker,
-  body.learner_view_instructor-index #auth-type-picker {
+  body .public_instructors-index #auth-type-picker,
+  body .learner_view_instructor-index #auth-type-picker {
     display: block;
     margin-bottom: 15px;
   }
 
-  body.public_instructors-index #time-range-picker,
-  body.learner_view_instructor-index #time-range-picker {
+  body .public_instructors-index #time-range-picker,
+  body .learner_view_instructor-index #time-range-picker {
     margin-left: 0;
     padding-right: 20px;
     border-right: 1px solid #212a37;
@@ -37448,8 +37862,8 @@ body.learner_view_instructor-index #date-filter-field #clear-filter[disabled] {
 }
 
 @media only screen and (max-width: 40em) {
-  body.public_instructors-index #tab-pricing-table #learner-price-table,
-  body.learner_view_instructor-index #tab-pricing-table #learner-price-table {
+  body .public_instructors-index #tab-pricing-table #learner-price-table,
+  body .learner_view_instructor-index #tab-pricing-table #learner-price-table {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
@@ -37461,22 +37875,26 @@ body.learner_view_instructor-index #date-filter-field #clear-filter[disabled] {
     padding: 7px !important;
   }
 
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #tab-pricing-table
     #learner-price-table
     .lessons,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #tab-pricing-table
     #learner-price-table
     .lessons {
     border-right: 1px dashed #6e7271;
   }
 
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #tab-pricing-table
     #learner-price-table
     .test-package,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #tab-pricing-table
     #learner-price-table
     .test-package {
@@ -37485,8 +37903,9 @@ body.learner_view_instructor-index #date-filter-field #clear-filter[disabled] {
     padding-top: 15px;
   }
 
-  body.public_instructors-index #tab-pricing-table #learner-price-table.test-a,
-  body.learner_view_instructor-index
+  body .public_instructors-index #tab-pricing-table #learner-price-table.test-a,
+  body
+    .learner_view_instructor-index
     #tab-pricing-table
     #learner-price-table.test-a {
     border: 2px solid #212a37;
@@ -37498,11 +37917,13 @@ body.learner_view_instructor-index #date-filter-field #clear-filter[disabled] {
     padding: 3px !important;
   }
 
-  body.public_instructors-index
+  body
+    .public_instructors-index
     #tab-pricing-table
     #learner-price-table.test-a
     .test-package,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #tab-pricing-table
     #learner-price-table.test-a
     .test-package {
@@ -37511,53 +37932,56 @@ body.learner_view_instructor-index #date-filter-field #clear-filter[disabled] {
 }
 
 @media only screen and (min-width: 40.0625em) {
-  body.public_instructors-index #instructor-segmentation-field #segment-one,
-  body.public_instructors-index #instructor-segmentation-field #segment-two,
-  body.public_instructors-index #instructor-segmentation-field #segment-three,
-  body.learner_view_instructor-index
+  body .public_instructors-index #instructor-segmentation-field #segment-one,
+  body .public_instructors-index #instructor-segmentation-field #segment-two,
+  body .public_instructors-index #instructor-segmentation-field #segment-three,
+  body
+    .learner_view_instructor-index
     #instructor-segmentation-field
     #segment-one,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #instructor-segmentation-field
     #segment-two,
-  body.learner_view_instructor-index
+  body
+    .learner_view_instructor-index
     #instructor-segmentation-field
     #segment-three {
     margin-top: 3.5rem;
   }
 }
 
-body.public_instructors-index #driving-test-location-dropdown,
-body.learner_view_instructor-index #driving-test-location-dropdown {
+body .public_instructors-index #driving-test-location-dropdown,
+body .learner_view_instructor-index #driving-test-location-dropdown {
   margin: 0.9375rem 0 -1.25rem;
 }
 
-body.public_instructors-index #driving-test-location-dropdown select,
-body.learner_view_instructor-index #driving-test-location-dropdown select {
+body .public_instructors-index #driving-test-location-dropdown select,
+body .learner_view_instructor-index #driving-test-location-dropdown select {
   height: 40px !important;
 }
 
-body.public_instructors-index #driving-test-location-dropdown p,
-body.learner_view_instructor-index #driving-test-location-dropdown p {
+body .public_instructors-index #driving-test-location-dropdown p,
+body .learner_view_instructor-index #driving-test-location-dropdown p {
   display: none;
 }
 
-body.public_instructors-show .owl-carousel-div {
+body .public_instructors-show .owl-carousel-div {
   padding: 0 20px 20px;
 }
 
 @media only screen and (max-width: 40em) {
-  body.public_instructors-show .owl-carousel-div {
+  body .public_instructors-show .owl-carousel-div {
     padding: 10px 0 15px 15px;
     border-bottom: 10px #212a37 solid;
   }
 
-  body.public_instructors-show .owl-carousel-div .owl-stage {
+  body .public_instructors-show .owl-carousel-div .owl-stage {
     margin: auto;
   }
 }
 
-body.public_instructors-show .owl-carousel-div .owl-item a {
+body .public_instructors-show .owl-carousel-div .owl-item a {
   display: block;
   text-align: center;
   color: #212a37;
@@ -37565,7 +37989,7 @@ body.public_instructors-show .owl-carousel-div .owl-item a {
   max-width: 80px;
 }
 
-body.public_instructors-show .owl-carousel-div .owl-item a img {
+body .public_instructors-show .owl-carousel-div .owl-item a img {
   display: inline-block;
   margin: 0 auto 3px;
   width: 60px;
@@ -37573,18 +37997,18 @@ body.public_instructors-show .owl-carousel-div .owl-item a img {
 }
 
 @media only screen and (max-width: 40em) {
-  body.public_instructors-show .owl-carousel-div .owl-item a {
+  body .public_instructors-show .owl-carousel-div .owl-item a {
     width: 70px;
     max-width: 70px;
   }
 
-  body.public_instructors-show .owl-carousel-div .owl-item a img {
+  body .public_instructors-show .owl-carousel-div .owl-item a img {
     width: 50px;
     height: 50px;
   }
 }
 
-body.public_instructors-show .owl-carousel-div .owl-dots {
+body .public_instructors-show .owl-carousel-div .owl-dots {
   display: none;
 }
 
@@ -37618,87 +38042,88 @@ body.public_instructors-show .owl-carousel-div .owl-dots {
   transform: scale(2, 5) translateY(50%);
 }
 
-body.consumer section[class*="hero-"],
-body.public_instructors-index section[class*="hero-"],
-body.dkts-finish_test section[class*="hero-"] {
+body .consumer section[class*="hero-"],
+body .public_instructors-index section[class*="hero-"],
+body .section[class*="hero-"] {
   position: relative;
-  background: #95d6e6 center bottom no-repeat;
+  background: #212a37
+    url(https://www.ezlicence.com.au/assets/banner-hero-background-pattern-43462b191509785f785136d37615f59101959dc511b060aae02203fa83ab5770.png)
+    bottom repeat-x;
   background-size: cover;
 }
 
-body.consumer section.non-branded[class*="hero-"],
-body.public_instructors-index section.non-branded[class*="hero-"],
-body.dkts-finish_test section.non-branded[class*="hero-"] {
+body .consumer section.non-branded[class*="hero-"],
+body .public_instructors-index section.non-branded[class*="hero-"],
+body .section.non-branded[class*="hero-"] {
   background-image: url(https://www.ezlicence.com.au/assets/banner-instructor-non-branded-28b6213008301ed6c7f470a4c6c5cdd1b843a45c4b618e9132704d44cea0126a.png);
 }
 
 @media only screen and (max-width: 40em) {
-  body.consumer section[class*="hero-"],
-  body.public_instructors-index section[class*="hero-"],
-  body.dkts-finish_test section[class*="hero-"] {
+  body .consumer section[class*="hero-"],
+  body .public_instructors-index section[class*="hero-"],
+  body .section[class*="hero-"] {
     height: auto;
     background-size: auto;
     margin-bottom: -1px;
   }
 
-  body.consumer section.non-branded[class*="hero-"],
-  body.public_instructors-index section.non-branded[class*="hero-"],
-  body.dkts-finish_test section.non-branded[class*="hero-"] {
+  body .consumer section.non-branded[class*="hero-"],
+  body .public_instructors-index section.non-branded[class*="hero-"],
+  body .section.non-branded[class*="hero-"] {
     background-image: url(https://www.ezlicence.com.au/assets/banner-instructor-non-branded.mobile-184452d50e41ad4863432a5620552b69e78b033ef44c019400c8ee144de7dd73.png);
   }
 
-  body.consumer section[class*="hero-"] .cta-box,
-  body.public_instructors-index section[class*="hero-"] .cta-box,
-  body.dkts-finish_test section[class*="hero-"] .cta-box {
+  body .consumer section[class*="hero-"] .cta-box,
+  body .public_instructors-index section[class*="hero-"] .cta-box,
+  body .section[class*="hero-"] .cta-box {
     position: static;
     width: auto;
     margin: 0 -0.625rem;
   }
 }
 
-body.consumer section[class*="hero-"] ul.breadcrumbs,
-body.public_instructors-index section[class*="hero-"] ul.breadcrumbs,
-body.dkts-finish_test section[class*="hero-"] ul.breadcrumbs {
+body .consumer section[class*="hero-"] ul.breadcrumbs,
+body .public_instructors-index section[class*="hero-"] ul.breadcrumbs,
+body .section[class*="hero-"] ul.breadcrumbs {
   background: none;
 }
 
-body.consumer section[class*="hero-"] ul.breadcrumbs.white > li a,
-body.public_instructors-index
+body .consumer section[class*="hero-"] ul.breadcrumbs.white > li a,
+body
+  .public_instructors-index
   section[class*="hero-"]
   ul.breadcrumbs.white
   > li
   a,
-body.dkts-finish_test section[class*="hero-"] ul.breadcrumbs.white > li a {
+body .section[class*="hero-"] ul.breadcrumbs.white > li a {
   color: #ffffff;
   text-decoration: underline;
 }
 
-body.consumer section[class*="hero-"] ul.breadcrumbs.white > li:before,
-body.public_instructors-index
+body .consumer section[class*="hero-"] ul.breadcrumbs.white > li:before,
+body
+  .public_instructors-index
   section[class*="hero-"]
   ul.breadcrumbs.white
   > li:before,
-body.dkts-finish_test section[class*="hero-"] ul.breadcrumbs.white > li:before {
+body .section[class*="hero-"] ul.breadcrumbs.white > li:before {
   color: #ffffff;
 }
 
-body.consumer section[class*="hero-"] ul.breadcrumbs.white > li.current a,
-body.public_instructors-index
+body .consumer section[class*="hero-"] ul.breadcrumbs.white > li.current a,
+body
+  .public_instructors-index
   section[class*="hero-"]
   ul.breadcrumbs.white
   > li.current
   a,
-body.dkts-finish_test
-  section[class*="hero-"]
-  ul.breadcrumbs.white
-  > li.current
-  a {
+body section[class*="hero-"] ul.breadcrumbs.white > li.current a {
   text-decoration: none;
 }
 
-body.consumer section[class*="hero-"] .footnote,
-body.public_instructors-index section[class*="hero-"] .footnote,
-body.dkts-finish_test section[class*="hero-"] .footnote {
+body .consumer section[class*="hero-"] .footnote,
+body .public_instructors-index section[class*="hero-"] .footnote,
+body .section[class*="hero-"] .footnote {
   position: absolute;
   z-index: 999;
   display: block;
@@ -37711,24 +38136,24 @@ body.dkts-finish_test section[class*="hero-"] .footnote {
 }
 
 @media only screen and (max-width: 40em) {
-  body.consumer section[class*="hero-"] .footnote,
-  body.public_instructors-index section[class*="hero-"] .footnote,
-  body.dkts-finish_test section[class*="hero-"] .footnote {
+  body .consumer section[class*="hero-"] .footnote,
+  body .public_instructors-index section[class*="hero-"] .footnote,
+  body .section[class*="hero-"] .footnote {
     margin-top: 2rem;
   }
 }
 
-body.consumer section.hero-home[class*="hero-"],
-body.public_instructors-index section.hero-home[class*="hero-"],
-body.dkts-finish_test section.hero-home[class*="hero-"] {
+body .consumer section.hero-home[class*="hero-"],
+body .public_instructors-index section.hero-home[class*="hero-"],
+body .section.hero-home[class*="hero-"] {
   background: #95d6e6
     url(https://www.ezlicence.com.au/assets/banner-homepage-hero-main-d480a9b59bd428ac83e6a08321452b3cffe13746cf642f5d1713072c19530054.png)
     center bottom no-repeat;
 }
 
-body.consumer section.hero-home[class*="hero-"] .hero-vehicle,
-body.public_instructors-index section.hero-home[class*="hero-"] .hero-vehicle,
-body.dkts-finish_test section.hero-home[class*="hero-"] .hero-vehicle {
+body .consumer section.hero-home[class*="hero-"] .hero-vehicle,
+body .public_instructors-index section.hero-home[class*="hero-"] .hero-vehicle,
+body .section.hero-home[class*="hero-"] .hero-vehicle {
   position: absolute;
   bottom: 6px;
   left: 50%;
@@ -37736,9 +38161,9 @@ body.dkts-finish_test section.hero-home[class*="hero-"] .hero-vehicle {
   pointer-events: none;
 }
 
-body.consumer section.hero-home[class*="hero-"]:before,
-body.public_instructors-index section.hero-home[class*="hero-"]:before,
-body.dkts-finish_test section.hero-home[class*="hero-"]:before {
+body .consumer section.hero-home[class*="hero-"]:before,
+body .public_instructors-index section.hero-home[class*="hero-"]:before,
+body .section.hero-home[class*="hero-"]:before {
   display: block;
   content: "";
   position: absolute;
@@ -37750,22 +38175,25 @@ body.dkts-finish_test section.hero-home[class*="hero-"]:before {
 }
 
 @media only screen and (max-width: 40em) {
-  body.consumer section.hero-home[class*="hero-"],
-  body.public_instructors-index section.hero-home[class*="hero-"],
-  body.dkts-finish_test section.hero-home[class*="hero-"] {
+  body .consumer section.hero-home[class*="hero-"],
+  body .public_instructors-index section.hero-home[class*="hero-"],
+  body .section.hero-home[class*="hero-"] {
     background-image: url(https://www.ezlicence.com.au/assets/banner-homepage-hero-main.mobile-db0f77a0e0d9c8b27b0b3e28e9f704b6da0cb386a64236f0c2f77d7a42b4211d.png);
     background-position: 65% bottom;
   }
 
-  body.consumer section.hero-home[class*="hero-"] .hero-vehicle,
-  body.public_instructors-index section.hero-home[class*="hero-"] .hero-vehicle,
-  body.dkts-finish_test section.hero-home[class*="hero-"] .hero-vehicle {
+  body .consumer section.hero-home[class*="hero-"] .hero-vehicle,
+  body
+    .public_instructors-index
+    section.hero-home[class*="hero-"]
+    .hero-vehicle,
+  body .section.hero-home[class*="hero-"] .hero-vehicle {
     display: none;
   }
 
-  body.consumer section.hero-home[class*="hero-"] .cta-box,
-  body.public_instructors-index section.hero-home[class*="hero-"] .cta-box,
-  body.dkts-finish_test section.hero-home[class*="hero-"] .cta-box {
+  body .consumer section.hero-home[class*="hero-"] .cta-box,
+  body .public_instructors-index section.hero-home[class*="hero-"] .cta-box,
+  body .section.hero-home[class*="hero-"] .cta-box {
     margin: -10px -1.875rem 0 -1.875rem;
     padding-left: 25px;
     padding-right: 25px;
@@ -37789,18 +38217,19 @@ body.dkts-finish_test section.hero-home[class*="hero-"]:before {
     repeat;
 }
 
-body.consumer section.hero-test-package[class*="hero-"] .container,
-body.public_instructors-index
+body .consumer section.hero-test-package[class*="hero-"] .container,
+body
+  .public_instructors-index
   section.hero-test-package[class*="hero-"]
   .container,
-body.dkts-finish_test section.hero-test-package[class*="hero-"] .container {
+body .section.hero-test-package[class*="hero-"] .container {
   position: relative;
   z-index: 2;
 }
 
-body.consumer section.hero-test-package[class*="hero-"]:before,
-body.public_instructors-index section.hero-test-package[class*="hero-"]:before,
-body.dkts-finish_test section.hero-test-package[class*="hero-"]:before {
+body .consumer section.hero-test-package[class*="hero-"]:before,
+body .public_instructors-index section.hero-test-package[class*="hero-"]:before,
+body .section.hero-test-package[class*="hero-"]:before {
   display: block;
   content: "";
   position: absolute;
@@ -37817,98 +38246,99 @@ body.dkts-finish_test section.hero-test-package[class*="hero-"]:before {
 }
 
 .no-webp.no-jpeg2000
-  body.consumer
+  body
+  .consumer
   section.hero-test-package[class*="hero-"]:before,
 .no-webp.no-jpeg2000
-  body.public_instructors-index
+  body
+  .public_instructors-index
   section.hero-test-package[class*="hero-"]:before,
-.no-webp.no-jpeg2000
-  body.dkts-finish_test
-  section.hero-test-package[class*="hero-"]:before {
+.no-webp.no-jpeg2000 body section.hero-test-package[class*="hero-"]:before {
   background-image: url(https://www.ezlicence.com.au/assets/banner-driving-test-package-6095683a7819a9218327597946c8c977f34bd9c7d5354c17dd5b56022b3d026b.png);
 }
 
-.webp body.consumer section.hero-test-package[class*="hero-"]:before,
+.webp body .consumer section.hero-test-package[class*="hero-"]:before,
 .webp
-  body.public_instructors-index
+  body
+  .public_instructors-index
   section.hero-test-package[class*="hero-"]:before,
-.webp body.dkts-finish_test section.hero-test-package[class*="hero-"]:before {
+.webp body .section.hero-test-package[class*="hero-"]:before {
   background-image: url(https://www.ezlicence.com.au/assets/banner-driving-test-package-2624a5b94b9c3117056938413fd1650f580131c0b6966cd9d5b3c2fe8d625842.webp);
 }
 
-.jpeg2000 body.consumer section.hero-test-package[class*="hero-"]:before,
+.jpeg2000 body .consumer section.hero-test-package[class*="hero-"]:before,
 .jpeg2000
-  body.public_instructors-index
+  body
+  .public_instructors-index
   section.hero-test-package[class*="hero-"]:before,
-.jpeg2000
-  body.dkts-finish_test
-  section.hero-test-package[class*="hero-"]:before {
+.jpeg2000 body section.hero-test-package[class*="hero-"]:before {
   background-image: url(https://www.ezlicence.com.au/assets/banner-driving-test-package-a857a7c2f242c20ee208ed97c148bb6685d960ca32f22aa6484c9d25e552e1d6.jp2);
 }
 
 @media only screen and (max-width: 40em) {
-  body.consumer section.hero-test-package[class*="hero-"],
-  body.public_instructors-index section.hero-test-package[class*="hero-"],
-  body.dkts-finish_test section.hero-test-package[class*="hero-"] {
+  body .consumer section.hero-test-package[class*="hero-"],
+  body .public_instructors-index section.hero-test-package[class*="hero-"],
+  body .section.hero-test-package[class*="hero-"] {
     min-height: 0;
   }
 
-  body.consumer section.hero-test-package[class*="hero-"]:before,
-  body.public_instructors-index
+  body .consumer section.hero-test-package[class*="hero-"]:before,
+  body
+    .public_instructors-index
     section.hero-test-package[class*="hero-"]:before,
-  body.dkts-finish_test section.hero-test-package[class*="hero-"]:before {
+  body .section.hero-test-package[class*="hero-"]:before {
     display: none;
   }
 }
 
-body.consumer section.hero-dkt[class*="hero-"],
-body.public_instructors-index section.hero-dkt[class*="hero-"],
-body.dkts-finish_test section.hero-dkt[class*="hero-"] {
+body .consumer section.hero-dkt[class*="hero-"],
+body .public_instructors-index section.hero-dkt[class*="hero-"],
+body .section.hero-dkt[class*="hero-"] {
   min-height: 400px;
 }
 
-body.consumer section.hero-dkt[class*="hero-"] h1,
-body.consumer section.hero-dkt[class*="hero-"] h2,
-body.consumer section.hero-dkt[class*="hero-"] p,
-body.public_instructors-index section.hero-dkt[class*="hero-"] h1,
-body.public_instructors-index section.hero-dkt[class*="hero-"] h2,
-body.public_instructors-index section.hero-dkt[class*="hero-"] p,
-body.dkts-finish_test section.hero-dkt[class*="hero-"] h1,
-body.dkts-finish_test section.hero-dkt[class*="hero-"] h2,
-body.dkts-finish_test section.hero-dkt[class*="hero-"] p {
+body .consumer section.hero-dkt[class*="hero-"] h1,
+body .consumer section.hero-dkt[class*="hero-"] h2,
+body .consumer section.hero-dkt[class*="hero-"] p,
+body .public_instructors-index section.hero-dkt[class*="hero-"] h1,
+body .public_instructors-index section.hero-dkt[class*="hero-"] h2,
+body .public_instructors-index section.hero-dkt[class*="hero-"] p,
+body .section.hero-dkt[class*="hero-"] h1,
+body .section.hero-dkt[class*="hero-"] h2,
+body .section.hero-dkt[class*="hero-"] p {
   color: white;
 }
 
 @media only screen and (max-width: 40em),
   only screen and (min-width: 40.0625em) and (max-width: 64em) {
-  body.consumer section.hero-dkt[class*="hero-"],
-  body.public_instructors-index section.hero-dkt[class*="hero-"],
-  body.dkts-finish_test section.hero-dkt[class*="hero-"] {
+  body .consumer section.hero-dkt[class*="hero-"],
+  body .public_instructors-index section.hero-dkt[class*="hero-"],
+  body .section.hero-dkt[class*="hero-"] {
     height: auto;
   }
 
-  body.consumer section.hero-dkt[class*="hero-"] .cta-box,
-  body.public_instructors-index section.hero-dkt[class*="hero-"] .cta-box,
-  body.dkts-finish_test section.hero-dkt[class*="hero-"] .cta-box {
+  body .consumer section.hero-dkt[class*="hero-"] .cta-box,
+  body .public_instructors-index section.hero-dkt[class*="hero-"] .cta-box,
+  body .section.hero-dkt[class*="hero-"] .cta-box {
     width: auto;
   }
 }
 
-body.consumer section.intro .image-keys,
-body.consumer section.intro .image-l-plate,
-body.public_instructors-index section.intro .image-keys,
-body.public_instructors-index section.intro .image-l-plate,
-body.dkts-finish_test section.intro .image-keys,
-body.dkts-finish_test section.intro .image-l-plate {
+body .consumer section.intro .image-keys,
+body .consumer section.intro .image-l-plate,
+body .public_instructors-index section.intro .image-keys,
+body .public_instructors-index section.intro .image-l-plate,
+body .section.intro .image-keys,
+body .section.intro .image-l-plate {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
 }
 
-body.consumer section.intro .image-l-plate,
-body.public_instructors-index section.intro .image-l-plate,
-body.dkts-finish_test section.intro .image-l-plate {
+body .consumer section.intro .image-l-plate,
+body .public_instructors-index section.intro .image-l-plate,
+body .section.intro .image-l-plate {
   bottom: -80px;
   right: -70px;
   width: 360px;
@@ -37917,16 +38347,16 @@ body.dkts-finish_test section.intro .image-l-plate {
 }
 
 @media only screen and (max-width: 40em) {
-  body.consumer section.intro .image-l-plate,
-  body.public_instructors-index section.intro .image-l-plate,
-  body.dkts-finish_test section.intro .image-l-plate {
+  body .consumer section.intro .image-l-plate,
+  body .public_instructors-index section.intro .image-l-plate,
+  body .section.intro .image-l-plate {
     background: none;
   }
 }
 
-body.consumer section.intro .image-keys,
-body.public_instructors-index section.intro .image-keys,
-body.dkts-finish_test section.intro .image-keys {
+body .consumer section.intro .image-keys,
+body .public_instructors-index section.intro .image-keys,
+body .section.intro .image-keys {
   bottom: -3rem;
   right: -20%;
   width: 570px;
@@ -37935,44 +38365,44 @@ body.dkts-finish_test section.intro .image-keys {
 }
 
 @media only screen and (max-width: 40em) {
-  body.consumer section.intro .image-keys,
-  body.public_instructors-index section.intro .image-keys,
-  body.dkts-finish_test section.intro .image-keys {
+  body .consumer section.intro .image-keys,
+  body .public_instructors-index section.intro .image-keys,
+  body .section.intro .image-keys {
     background: none;
   }
 }
 
-body.consumer section ul.location-list > li,
-body.public_instructors-index section ul.location-list > li,
-body.dkts-finish_test section ul.location-list > li {
+body .consumer section ul.location-list > li,
+body .public_instructors-index section ul.location-list > li,
+body .section ul.location-list > li {
   float: left;
   width: 25% !important;
 }
 
 @media only screen and (max-width: 40em) {
-  body.consumer section ul.location-list > li,
-  body.public_instructors-index section ul.location-list > li,
-  body.dkts-finish_test section ul.location-list > li {
+  body .consumer section ul.location-list > li,
+  body .public_instructors-index section ul.location-list > li,
+  body .section ul.location-list > li {
     width: 50% !important;
   }
 }
 
-body.consumer section ul.location-list > li > a,
-body.public_instructors-index section ul.location-list > li > a,
-body.dkts-finish_test section ul.location-list > li > a {
+body .consumer section ul.location-list > li > a,
+body .public_instructors-index section ul.location-list > li > a,
+body .section ul.location-list > li > a {
   color: #6e7271;
   font-size: 0.8125rem !important;
 }
 
-body.consumer section ul.location-list > li > a:hover,
-body.public_instructors-index section ul.location-list > li > a:hover,
-body.dkts-finish_test section ul.location-list > li > a:hover {
+body .consumer section ul.location-list > li > a:hover,
+body .public_instructors-index section ul.location-list > li > a:hover,
+body .section ul.location-list > li > a:hover {
   color: #3c3e3e;
 }
 
-body.consumer .ctas a,
-body.public_instructors-index .ctas a,
-body.dkts-finish_test .ctas a {
+body .consumer .ctas a,
+body .public_instructors-index .ctas a,
+body ..ctas a {
   display: inline-block;
   padding: 0.3125rem 0.0625rem;
   color: #212a37;
@@ -37980,21 +38410,21 @@ body.dkts-finish_test .ctas a {
   text-decoration: underline;
 }
 
-body.consumer .ctas a:hover,
-body.public_instructors-index .ctas a:hover,
-body.dkts-finish_test .ctas a:hover {
+body .consumer .ctas a:hover,
+body .public_instructors-index .ctas a:hover,
+body ..ctas a:hover {
   color: #ffc20e;
 }
 
-body.consumer .ctas a .fa,
-body.public_instructors-index .ctas a .fa,
-body.dkts-finish_test .ctas a .fa {
+body .consumer .ctas a .fa,
+body .public_instructors-index .ctas a .fa,
+body ..ctas a .fa {
   margin: 0 0.125rem;
 }
 
-body.consumer .cta-box,
-body.public_instructors-index .cta-box,
-body.dkts-finish_test .cta-box {
+body .consumer .cta-box,
+body .public_instructors-index .cta-box,
+body ..cta-box {
   position: relative;
   z-index: 2;
   margin-top: 1rem;
@@ -38003,9 +38433,9 @@ body.dkts-finish_test .cta-box {
   border-radius: 12px;
 }
 
-body.consumer .cta-box.has-arrow:after,
-body.public_instructors-index .cta-box.has-arrow:after,
-body.dkts-finish_test .cta-box.has-arrow:after {
+body .consumer .cta-box.has-arrow:after,
+body .public_instructors-index .cta-box.has-arrow:after,
+body ..cta-box.has-arrow:after {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
@@ -38024,38 +38454,38 @@ body.dkts-finish_test .cta-box.has-arrow:after {
 }
 
 @media only screen and (max-width: 40em) {
-  body.consumer .cta-box.has-arrow:after,
-  body.public_instructors-index .cta-box.has-arrow:after,
-  body.dkts-finish_test .cta-box.has-arrow:after {
+  body .consumer .cta-box.has-arrow:after,
+  body .public_instructors-index .cta-box.has-arrow:after,
+  body ..cta-box.has-arrow:after {
     display: none;
   }
 }
 
-body.consumer .cta-box .cta-close,
-body.public_instructors-index .cta-box .cta-close,
-body.dkts-finish_test .cta-box .cta-close {
+body .consumer .cta-box .cta-close,
+body .public_instructors-index .cta-box .cta-close,
+body ..cta-box .cta-close {
   display: none;
 }
 
-body.consumer .cta-box #result,
-body.public_instructors-index .cta-box #result,
-body.dkts-finish_test .cta-box #result {
+body .consumer .cta-box #result,
+body .public_instructors-index .cta-box #result,
+body ..cta-box #result {
   position: relative;
   z-index: 999;
 }
 
-body.consumer .cta-box #result .divider,
-body.public_instructors-index .cta-box #result .divider,
-body.dkts-finish_test .cta-box #result .divider {
+body .consumer .cta-box #result .divider,
+body .public_instructors-index .cta-box #result .divider,
+body ..cta-box #result .divider {
   margin-bottom: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
 
-body.booking-view_products #product_selection .panel {
+body .booking-view_products #product_selection .panel {
   padding: 0;
 }
 
-body.booking-view_products #product_selection .panel .panel-heading {
+body .booking-view_products #product_selection .panel .panel-heading {
   background: #212a37;
   border-radius: 6px 6px 0 0;
   padding: 0.8333333333rem 1.25rem;
@@ -38063,8 +38493,9 @@ body.booking-view_products #product_selection .panel .panel-heading {
   color: white;
 }
 
-body.booking-view_products #product_selection .panel .panel-heading .label,
-body.booking-view_products
+body .booking-view_products #product_selection .panel .panel-heading .label,
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-heading
@@ -38073,12 +38504,14 @@ body.booking-view_products
   .saved,
 #learner-price-table
   .lessons
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-heading
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-heading
@@ -38087,19 +38520,22 @@ body.booking-view_products
   .saved,
 .learner-price-table
   .lessons
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-heading
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-heading
   .panel-body
   label.sku-option
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38111,7 +38547,8 @@ body.booking-view_products
   font-size: 12px;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38123,7 +38560,8 @@ body.booking-view_products
   padding: 0.8333333333rem 1.25rem;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38137,7 +38575,8 @@ body.booking-view_products
   transform: scale(1) !important;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38147,13 +38586,15 @@ body.booking-view_products
   color: inherit;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .product,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38163,14 +38604,16 @@ body.booking-view_products
   font-weight: 500;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .product
   small,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38180,7 +38623,8 @@ body.booking-view_products
   font-weight: normal;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38189,7 +38633,8 @@ body.booking-view_products
   font-size: 22px;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38200,7 +38645,8 @@ body.booking-view_products
   font-weight: 500;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38210,7 +38656,8 @@ body.booking-view_products
   font-size: 20px;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38220,7 +38667,8 @@ body.booking-view_products
   font-size: 16px;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38233,7 +38681,8 @@ body.booking-view_products
   margin-bottom: -2px;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38243,7 +38692,8 @@ body.booking-view_products
   margin-top: 1px;
 }
 
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -38252,7 +38702,8 @@ body.booking-view_products
 }
 
 @media only screen and (max-width: 40em) {
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
@@ -38262,13 +38713,15 @@ body.booking-view_products
     margin-left: -2px !important;
   }
 
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
     label.sku-option
     .product,
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
@@ -38279,14 +38732,16 @@ body.booking-view_products
     font-size: 17px;
   }
 
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
     label.sku-option
     .product
     sup,
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
@@ -38296,7 +38751,8 @@ body.booking-view_products
     display: block;
   }
 
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
@@ -38308,7 +38764,8 @@ body.booking-view_products
     margin-right: 10px;
   }
 
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
@@ -38537,12 +38994,14 @@ body.booking-view_products
 
 .instructor-block .img-featured:hover,
 .instructor-block
-  body.public_instructors-show
+  body
+  .public_instructors-show
   .owl-carousel-div
   .owl-item
   a
   img:hover,
-body.public_instructors-show
+body
+  .public_instructors-show
   .owl-carousel-div
   .owl-item
   a
@@ -38904,227 +39363,240 @@ section.justreview-summary
 }
 
 @media only screen and (min-width: 40.0625em) {
-  body.consumer section.hero-instructor.reduced,
-  body.public_instructors-index section.hero-instructor.reduced,
-  body.dkts-finish_test section.hero-instructor.reduced {
+  body .consumer section.hero-instructor.reduced,
+  body .public_instructors-index section.hero-instructor.reduced,
+  body .section.hero-instructor.reduced {
     background: white;
     padding: 0.625rem 0 1.25rem !important;
   }
 
-  body.consumer section.hero-instructor.reduced .cta-box.shadow,
-  body.public_instructors-index section.hero-instructor.reduced .cta-box.shadow,
-  body.dkts-finish_test section.hero-instructor.reduced .cta-box.shadow {
+  body .consumer section.hero-instructor.reduced .cta-box.shadow,
+  body
+    .public_instructors-index
+    section.hero-instructor.reduced
+    .cta-box.shadow,
+  body .section.hero-instructor.reduced .cta-box.shadow {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
     box-shadow: none;
   }
 
-  body.consumer section.hero-instructor.reduced .cta-box.collapsed,
-  body.public_instructors-index
+  body .consumer section.hero-instructor.reduced .cta-box.collapsed,
+  body
+    .public_instructors-index
     section.hero-instructor.reduced
     .cta-box.collapsed,
-  body.dkts-finish_test section.hero-instructor.reduced .cta-box.collapsed {
+  body .section.hero-instructor.reduced {
     padding: 0 !important;
     margin: 0 !important;
   }
 
-  body.consumer section.hero-instructor.reduced h1,
-  body.consumer section.hero-instructor.reduced h2,
-  body.consumer section.hero-instructor.reduced h3,
-  body.consumer section.hero-instructor.reduced img,
-  body.public_instructors-index section.hero-instructor.reduced h1,
-  body.public_instructors-index section.hero-instructor.reduced h2,
-  body.public_instructors-index section.hero-instructor.reduced h3,
-  body.public_instructors-index section.hero-instructor.reduced img,
-  body.dkts-finish_test section.hero-instructor.reduced h1,
-  body.dkts-finish_test section.hero-instructor.reduced h2,
-  body.dkts-finish_test section.hero-instructor.reduced h3,
-  body.dkts-finish_test section.hero-instructor.reduced img {
+  body .consumer section.hero-instructor.reduced h1,
+  body .consumer section.hero-instructor.reduced h2,
+  body .consumer section.hero-instructor.reduced h3,
+  body .consumer section.hero-instructor.reduced img,
+  body .public_instructors-index section.hero-instructor.reduced h1,
+  body .public_instructors-index section.hero-instructor.reduced h2,
+  body .public_instructors-index section.hero-instructor.reduced h3,
+  body .public_instructors-index section.hero-instructor.reduced img,
+  body .section.hero-instructor.reduced h1,
+  body .section.hero-instructor.reduced h2,
+  body .section.hero-instructor.reduced h3,
+  body .section.hero-instructor.reduced img {
     display: none;
   }
 
-  body.consumer .cta-box.collapsed,
-  body.public_instructors-index .cta-box.collapsed,
-  body.dkts-finish_test .cta-box.collapsed {
+  body .consumer .cta-box.collapsed,
+  body .public_instructors-index .cta-box.collapsed,
+  body . {
     position: static;
     width: auto;
     border: none;
     padding: 0;
   }
 
-  body.consumer .cta-box.collapsed:not(.shadow),
-  body.public_instructors-index .cta-box.collapsed:not(.shadow),
-  body.dkts-finish_test .cta-box.collapsed:not(.shadow) {
+  body .consumer .cta-box.collapsed:not(.shadow),
+  body .public_instructors-index .cta-box.collapsed:not(.shadow),
+  body ..cta-box.collapsed:not(.shadow) {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
     box-shadow: none;
   }
 
-  body.consumer .cta-box.collapsed:after,
-  body.public_instructors-index .cta-box.collapsed:after,
-  body.dkts-finish_test .cta-box.collapsed:after {
+  body .consumer .cta-box.collapsed:after,
+  body .public_instructors-index .cta-box.collapsed:after,
+  body ..cta-box.collapsed:after {
     display: none;
   }
 
-  body.consumer .cta-box.collapsed form .title,
-  body.consumer .cta-box.collapsed form .hide-for-small-only,
-  body.public_instructors-index .cta-box.collapsed form .title,
-  body.public_instructors-index .cta-box.collapsed form .hide-for-small-only,
-  body.dkts-finish_test .cta-box.collapsed form .title,
-  body.dkts-finish_test .cta-box.collapsed form .hide-for-small-only {
+  body .consumer form .title,
+  body .consumer form .hide-for-small-only,
+  body .public_instructors-index form .title,
+  body .public_instructors-index form .hide-for-small-only,
+  body .form .title,
+  body .form .hide-for-small-only {
     display: none !important;
   }
 
-  body.consumer .cta-box.collapsed form .button-group,
-  body.consumer .cta-box.collapsed form .row,
-  body.consumer .cta-box.collapsed form .columns,
-  body.consumer .cta-box.collapsed form .select2,
-  body.consumer .cta-box.collapsed form .button[type="submit"],
-  body.public_instructors-index .cta-box.collapsed form .button-group,
-  body.public_instructors-index .cta-box.collapsed form .row,
-  body.public_instructors-index .cta-box.collapsed form .columns,
-  body.public_instructors-index .cta-box.collapsed form .select2,
-  body.public_instructors-index .cta-box.collapsed form .button[type="submit"],
-  body.dkts-finish_test .cta-box.collapsed form .button-group,
-  body.dkts-finish_test .cta-box.collapsed form .row,
-  body.dkts-finish_test .cta-box.collapsed form .columns,
-  body.dkts-finish_test .cta-box.collapsed form .select2,
-  body.dkts-finish_test .cta-box.collapsed form .button[type="submit"] {
+  body .consumer form .button-group,
+  body .consumer form .row,
+  body .consumer form .columns,
+  body .consumer .cta-box .collapsed form .row,
+  body .consumer form .select2,
+  body .consumer form .button[type="submit"],
+  body .public_instructors-index form .button-group,
+  body .form1 .button-group,
+  body .public_instructors-index form .row,
+  body .public_instructors-index form .columns,
+  body .public_instructors-index form .select2,
+  body .public_instructors-index form .button[type="submit"],
+  body .form .button-group,
+  body .form .row,
+  body .form .columns,
+  body .form .select2,
+  body .form1 .button[type="submit"],
+  body .form .button[type="submit"] {
     float: none;
     display: inline-block;
     width: auto;
     margin: 0 !important;
   }
 
-  body.consumer .cta-box.collapsed form .button-group.columns,
-  body.consumer .cta-box.collapsed form .row.columns,
-  body.consumer .cta-box.collapsed form .columns.columns,
-  body.consumer .cta-box.collapsed form .select2.columns,
-  body.consumer .cta-box.collapsed form .button.columns[type="submit"],
-  body.public_instructors-index .cta-box.collapsed form .button-group.columns,
-  body.public_instructors-index .cta-box.collapsed form .row.columns,
-  body.public_instructors-index .cta-box.collapsed form .columns.columns,
-  body.public_instructors-index .cta-box.collapsed form .select2.columns,
-  body.public_instructors-index
+  body .consumer form .button-group.columns,
+  body .consumer form .row.columns,
+  body .consumer form .columns.columns,
+  body .consumer form .select2.columns,
+  body .consumer form .button.columns[type="submit"],
+  body .public_instructors-index form .button-group.columns,
+  body .public_instructors-index form .row.columns,
+  body .public_instructors-index form .columns.columns,
+  body .public_instructors-index form .select2.columns,
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     .button.columns[type="submit"],
-  body.dkts-finish_test .cta-box.collapsed form .button-group.columns,
-  body.dkts-finish_test .cta-box.collapsed form .row.columns,
-  body.dkts-finish_test .cta-box.collapsed form .columns.columns,
-  body.dkts-finish_test .cta-box.collapsed form .select2.columns,
-  body.dkts-finish_test .cta-box.collapsed form .button.columns[type="submit"] {
+  body .form .button-group.columns,
+  body .form .row.columns,
+  body .form .columns.columns,
+  body .form .select2.columns,
+  body .form .button.columns[type="submit"] {
     padding: 0 !important;
   }
-
-  body.consumer .cta-box.collapsed form .button-group,
-  body.public_instructors-index .cta-box.collapsed form .button-group,
-  body.dkts-finish_test .cta-box.collapsed form .button-group {
+  form1 body .consumer form .button-group,
+  body .public_instructors-index form .button-group,
+  body .form1 .button-group {
     width: 40%;
     padding-right: 1rem !important;
   }
 
-  body.consumer .cta-box.collapsed form .button-group .button,
-  body.public_instructors-index .cta-box.collapsed form .button-group .button,
-  body.dkts-finish_test .cta-box.collapsed form .button-group .button {
+  body .consumer form .button-group .button,
+  body .public_instructors-index form .button-group .button,
+  body .form1 .button-group .button {
     padding: 11px 10px;
   }
 
-  body.consumer .cta-box.collapsed form .container-inputs,
-  body.public_instructors-index .cta-box.collapsed form .container-inputs,
-  body.dkts-finish_test .cta-box.collapsed form .container-inputs {
+  body .consumer form .container-inputs,
+  body .public_instructors-index form .container-inputs,
+  body .form1 .container-inputs {
     float: right;
     width: 60%;
   }
 
-  body.consumer
+  body
+    .consumer
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb,
-  body.dkts-finish_test
-    .cta-box.collapsed
-    form
-    .container-inputs
-    .container-input-suburb {
+  body .cta-box.collapsed form .container-inputs .container-input-suburb {
     width: 70%;
     padding-right: 1rem !important;
   }
 
-  body.consumer
+  body
+    .consumer
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .public_search_record_suburb,
-  body.consumer
+  body
+    .consumer
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .input-group,
-  body.consumer
+  body
+    .consumer
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .select2,
-  body.consumer
+  body
+    .consumer
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .search_recipients_suburb,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .public_search_record_suburb,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .input-group,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .select2,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .search_recipients_suburb,
-  body.dkts-finish_test
+  body
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .public_search_record_suburb,
-  body.dkts-finish_test
+  body
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .input-group,
-  body.dkts-finish_test
+  body
     .cta-box.collapsed
     form
     .container-inputs
     .container-input-suburb
     .select2,
-  body.dkts-finish_test
+  body
     .cta-box.collapsed
     form
     .container-inputs
@@ -39133,34 +39605,33 @@ section.justreview-summary
     width: 100% !important;
   }
 
-  body.consumer .cta-box.collapsed form .container-inputs .container-submit,
-  body.public_instructors-index
+  body .consumer form .container-inputs .container-submit,
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     .container-inputs
     .container-submit,
-  body.dkts-finish_test
-    .cta-box.collapsed
-    form
-    .container-inputs
-    .container-submit {
+  body .cta-box.collapsed form .container-inputs .container-submit {
     float: right;
     width: 30%;
   }
 
-  body.consumer
+  body
+    .consumer
     .cta-box.collapsed
     form
     .container-inputs
     .container-submit
     .button[type="submit"],
-  body.public_instructors-index
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     .container-inputs
     .container-submit
     .button[type="submit"],
-  body.dkts-finish_test
+  body
     .cta-box.collapsed
     form
     .container-inputs
@@ -39169,58 +39640,54 @@ section.justreview-summary
     width: 100%;
   }
 
-  body.consumer .cta-box.collapsed form #driving-test-location-dropdown .row,
-  body.public_instructors-index
+  body .consumer form #driving-test-location-dropdown .row,
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     #driving-test-location-dropdown
     .row,
-  body.dkts-finish_test
-    .cta-box.collapsed
-    form
-    #driving-test-location-dropdown
-    .row {
+  body .cta-box.collapsed form #driving-test-location-dropdown .row {
     width: 100% !important;
     margin: 0;
   }
 
-  body.consumer
+  body
+    .consumer
     .cta-box.collapsed
     form
     #driving-test-location-dropdown
     .row
     .columns,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     #driving-test-location-dropdown
     .row
     .columns,
-  body.dkts-finish_test
-    .cta-box.collapsed
-    form
-    #driving-test-location-dropdown
-    .row
-    .columns {
+  body .cta-box.collapsed form #driving-test-location-dropdown .row .columns {
     float: left;
     display: block;
     width: 20%;
     padding: 0;
   }
 
-  body.consumer
+  body
+    .consumer
     .cta-box.collapsed
     form
     #driving-test-location-dropdown
     .row
     .columns.input-group,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     #driving-test-location-dropdown
     .row
     .columns.input-group,
-  body.dkts-finish_test
+  body
     .cta-box.collapsed
     form
     #driving-test-location-dropdown
@@ -39229,21 +39696,23 @@ section.justreview-summary
     width: 80%;
   }
 
-  body.consumer
+  body
+    .consumer
     .cta-box.collapsed
     form
     #driving-test-location-dropdown
     .row
     .columns.input-group
     select,
-  body.public_instructors-index
+  body
+    .public_instructors-index
     .cta-box.collapsed
     form
     #driving-test-location-dropdown
     .row
     .columns.input-group
     select,
-  body.dkts-finish_test
+  body
     .cta-box.collapsed
     form
     #driving-test-location-dropdown
@@ -39255,105 +39724,104 @@ section.justreview-summary
 }
 
 @media only screen and (max-width: 40em) {
-  body.consumer .button {
+  body .consumer .button {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
 
-  body.public_instructors-index section.hero-instructor.reduced {
+  body .public_instructors-index section.hero-instructor.reduced {
     display: none;
   }
 }
 
 @media only screen and (max-width: 40em),
   only screen and (min-width: 40.0625em) and (max-width: 64em) {
-  body.consumer,
-  body.public_instructors-index,
-  body.dkts-finish_test {
+  body .consumer,
+  body .public_instructors-index,
+  body . {
     padding-top: 0;
   }
 
-  body.consumer section.hero-instructor.reduced,
-  body.public_instructors-index section.hero-instructor.reduced,
-  body.dkts-finish_test section.hero-instructor.reduced {
+  body .consumer section.hero-instructor.reduced,
+  body .public_instructors-index section.hero-instructor.reduced,
+  body .section.hero-instructor.reduced {
     background: white;
     height: auto;
     min-height: 0;
   }
 
-  body.consumer .cta-box.collapsed,
-  body.public_instructors-index .cta-box.collapsed,
-  body.dkts-finish_test .cta-box.collapsed {
+  body .consumer .cta-box.collapsed,
+  body .public_instructors-index .cta-box.collapsed,
+  body . {
     border: none;
   }
 
-  body.consumer .cta-box.collapsed:not(.shadow),
-  body.public_instructors-index .cta-box.collapsed:not(.shadow),
-  body.dkts-finish_test .cta-box.collapsed:not(.shadow) {
+  body .consumer .cta-box.collapsed:not(.shadow),
+  body .public_instructors-index .cta-box.collapsed:not(.shadow),
+  body ..cta-box.collapsed:not(.shadow) {
     box-shadow: none;
   }
 
-  body.consumer .cta-box.collapsed .title,
-  body.public_instructors-index .cta-box.collapsed .title,
-  body.dkts-finish_test .cta-box.collapsed .title {
+  body .consumer .title,
+  body .public_instructors-index .title,
+  body ..title {
     display: none !important;
   }
 
-  body.consumer .cta-box.collapsed .container-submit,
-  body.public_instructors-index .cta-box.collapsed .container-submit,
-  body.dkts-finish_test .cta-box.collapsed .container-submit {
+  body .consumer .container-submit,
+  body .public_instructors-index .container-submit,
+  body ..container-submit {
     padding-left: 0;
   }
 
-  body.consumer .cta-box.collapsed .container-submit .button[type="submit"],
-  body.public_instructors-index
+  body .consumer .container-submit .button[type="submit"],
+  body
+    .public_instructors-index
     .cta-box.collapsed
     .container-submit
     .button[type="submit"],
-  body.dkts-finish_test
-    .cta-box.collapsed
-    .container-submit
-    .button[type="submit"] {
+  body .cta-box.collapsed .container-submit .button[type="submit"] {
     margin-bottom: 0;
   }
 
-  body.consumer .cta-box.collapsed.static,
-  body.public_instructors-index .cta-box.collapsed.static,
-  body.dkts-finish_test .cta-box.collapsed.static {
+  body .consumer .cta-box.collapsed.static,
+  body .public_instructors-index .cta-box.collapsed.static,
+  body ..cta-box.collapsed.static {
     width: auto;
     padding: 0.625rem 0;
   }
 
-  body.consumer .cta-box.collapsed.static form .title,
-  body.consumer .cta-box.collapsed.static form .hide-for-small-only,
-  body.public_instructors-index .cta-box.collapsed.static form .title,
-  body.public_instructors-index
+  body .consumer .cta-box.collapsed.static form .title,
+  body .consumer .cta-box.collapsed.static form .hide-for-small-only,
+  body .public_instructors-index .cta-box.collapsed.static form .title,
+  body
+    .public_instructors-index
     .cta-box.collapsed.static
     form
     .hide-for-small-only,
-  body.dkts-finish_test .cta-box.collapsed.static form .title,
-  body.dkts-finish_test .cta-box.collapsed.static form .hide-for-small-only {
+  body ..cta-box.collapsed.static form .title,
+  body ..cta-box.collapsed.static form .hide-for-small-only {
     display: none !important;
   }
 }
 
-body.devise #main {
+body .devise #main {
   padding-bottom: 2rem;
 }
 
-body.devise section.section {
+body .devise section.section {
   padding: 1.5625rem;
 }
 
-body.devise .instructor-profile-background {
+body .devise .instructor-profile-background {
   height: auto;
   margin-bottom: 1.875rem;
   padding-bottom: 0;
 }
 
 @media only screen and (max-width: 40em) {
-  body.devise .instructor-profile-background {
+  body .devise .instructor-profile-background {
     margin-bottom: 1rem;
   }
 }
@@ -39389,14 +39857,14 @@ section.devise #loading-overlay:before {
   color: #ffffff !important;
 }
 
-body[class*="dkt"] #main {
+body [class*="dkt"] #main {
   position: relative;
-  background: #95d6e6
-    url(https://www.ezlicence.com.au/assets/banner-dkt-hero-bg-b73d44daf20153a4d0467ae25fd853a1abb7745f9d54ce5dad1b1d2e5a582a3b.png)
+  background: #212a37
+    url(https://www.ezlicence.com.au/assets/banner-hero-background-pattern-43462b191509785f785136d37615f59101959dc511b060aae02203fa83ab5770.png)
     bottom repeat-x;
 }
 
-body[class*="dkt"] #main section.dkt {
+body [class*="dkt"] #main section.dkt {
   position: relative;
   padding-top: 1.25rem;
   padding-bottom: 18.75rem;
@@ -39404,7 +39872,7 @@ body[class*="dkt"] #main section.dkt {
     center bottom no-repeat;
 }
 
-body[class*="dkt"] #main section.dkt .dkt-car {
+body [class*="dkt"] #main section.dkt .dkt-car {
   position: absolute;
   bottom: 2.1875rem;
   background: url(https://www.ezlicence.com.au/assets/banner-dkt-car-83d39db9448a8c156cd4347c66790c0979790e4e1e7b6d7675a17b16abb3025c.png)
@@ -39418,14 +39886,14 @@ body[class*="dkt"] #main section.dkt .dkt-car {
   animation: carAnimation 13s linear infinite;
 }
 
-body[class*="dkt"] #main section.dkt .dkt-car .relative {
+body [class*="dkt"] #main section.dkt .dkt-car .relative {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-body[class*="dkt"] #main section.dkt .dkt-car .relative:before,
-body[class*="dkt"] #main section.dkt .dkt-car .relative:after {
+body [class*="dkt"] #main section.dkt .dkt-car .relative:before,
+body [class*="dkt"] #main section.dkt .dkt-car .relative:after {
   display: block;
   content: "";
   width: 40px;
@@ -39442,24 +39910,24 @@ body[class*="dkt"] #main section.dkt .dkt-car .relative:after {
   animation: rotating 1.2s linear infinite;
 }
 
-body[class*="dkt"] #main section.dkt .dkt-car .relative:before {
+body [class*="dkt"] #main section.dkt .dkt-car .relative:before {
   left: 183px;
 }
 
-body[class*="dkt"] #main section.dkt .container {
+body [class*="dkt"] #main section.dkt .container {
   padding: 0;
 }
 
-body[class*="dkt"] #main section.dkt .accordion .accordion-navigation {
+body [class*="dkt"] #main section.dkt .accordion .accordion-navigation {
   border-color: rgba(0, 0, 0, 0.14);
 }
 
-body[class*="dkt"] #main section.dkt .accordion .accordion-navigation a {
+body [class*="dkt"] #main section.dkt .accordion .accordion-navigation a {
   position: relative;
   padding-right: 2rem;
 }
 
-body[class*="dkt"] #main section.dkt .accordion .accordion-navigation a:after {
+body [class*="dkt"] #main section.dkt .accordion .accordion-navigation a:after {
   position: absolute;
   right: 0;
   top: 50%;
@@ -39494,29 +39962,29 @@ body[class*="dkt"] #main section.dkt .accordion .accordion-navigation a:after {
 }
 
 @media only screen and (max-width: 40em) {
-  body[class*="dkt"] #main {
+  body [class*="dkt"] #main {
     background-image: none;
   }
 
-  body[class*="dkt"] #main section.dkt {
+  body [class*="dkt"] #main section.dkt {
     background: none;
     padding: 0;
   }
 
-  body[class*="dkt"] #main section.dkt .dkt-car {
+  body [class*="dkt"] #main section.dkt .dkt-car {
     display: none;
   }
 
-  body[class*="dkt"] #main section.dkt .well {
+  body [class*="dkt"] #main section.dkt .well {
     border-left: 0;
     border-right: 0;
   }
 
-  body[class*="dkt"] #main section.dkt .well.small-full-height {
+  body [class*="dkt"] #main section.dkt .well.small-full-height {
     min-height: 100vh;
   }
 
-  body[class*="dkt"] #main section.dkt .form-actions {
+  body [class*="dkt"] #main section.dkt .form-actions {
     -webkit-box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
@@ -40713,13 +41181,15 @@ form label.product-select label.checkbox input {
   #lesson-form
     #item-lessons
     .media-body
-    body.booking-view_products
+    body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
     label.sku-option
     .saved,
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
@@ -40736,13 +41206,15 @@ form label.product-select label.checkbox input {
   #lesson-form
     #item-test-packages
     .media-body
-    body.booking-view_products
+    body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
     label.sku-option
     .saved,
-  body.booking-view_products
+  body
+    .booking-view_products
     #product_selection
     .panel
     .panel-body
@@ -40827,13 +41299,15 @@ form label.product-select label.checkbox input {
 #lesson-form
   .upsell-block
   .meta
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
@@ -41461,13 +41935,15 @@ header#header
     font-size: 1.125rem;
   }
 
-  body[class*="admin"]
+  body
+    [class*="admin"]
     header#header
     .top-bar
     section.top-bar-section
     ul.nav
     a.button,
-  body[class*="data_manager"]
+  body
+    [class*="data_manager"]
     header#header
     .top-bar
     section.top-bar-section
@@ -41476,28 +41952,32 @@ header#header
     display: none !important;
   }
 
-  body[class*="admin"]
+  body
+    [class*="admin"]
     header#header
     .top-bar
     section.top-bar-section
     ul.nav
     ul.dropdown
     hr,
-  body[class*="admin"]
+  body
+    [class*="admin"]
     header#header
     .top-bar
     section.top-bar-section
     ul.nav
     ul.dropdown
     svg,
-  body[class*="data_manager"]
+  body
+    [class*="data_manager"]
     header#header
     .top-bar
     section.top-bar-section
     ul.nav
     ul.dropdown
     hr,
-  body[class*="data_manager"]
+  body
+    [class*="data_manager"]
     header#header
     .top-bar
     section.top-bar-section
@@ -41833,13 +42313,15 @@ nav#sidenav > ul svg * {
 nav#sidenav > ul .label,
 nav#sidenav
   > ul
-  body.booking-view_products
+  body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body
   label.sku-option
   .saved,
-body.booking-view_products
+body
+  .booking-view_products
   #product_selection
   .panel
   .panel-body

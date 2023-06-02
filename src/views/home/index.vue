@@ -1,5 +1,5 @@
 <template>
-  <div class="onsumer pages-learn">
+  <div class="onsumer pages-learn" @click.stop="handleCloseAll">
     <header id="header">
       <div class="bg-oil show-for-medium-up">
         <nav class="secondary-bar clearfix">
@@ -47,8 +47,12 @@
               </div>
             </li>
           </ul>
-          <section class="top-bar-section" @touchmove.prevent>
-            <ul class="nav left" @touchmove.prevent>
+          <section
+            class="top-bar-section"
+            @touchmove.prevent
+            @mousewheel.prevent
+          >
+            <ul class="nav left">
               <li>
                 <a title="Driving Lessons" href="/driving-lessons"
                   >Driving Lessons</a
@@ -67,7 +71,7 @@
               <li class="divider"></li>
               <li><a title="Pricing" href="/pricing">Pricing</a></li>
             </ul>
-            <ul class="nav right" @touchmove.prevent>
+            <ul class="nav right">
               <li class="cta show-for-large-up">
                 <a
                   class="button yellow"
@@ -177,7 +181,7 @@
             id="suburb-select2-search"
           >
             <form
-              class="simple_form new_public_search_record"
+              class="form1 simple_form new_public_search_record"
               id="new_public_search_record"
               novalidate="novalidate"
               action="/search_instructor"
@@ -193,33 +197,7 @@
                 data-test-location=""
                 data-select2-id="13"
               >
-                <input
-                  value="result"
-                  type="hidden"
-                  name="public_search_record[result_field_name]"
-                  id="public_search_record_result_field_name"
-                />
-                <input
-                  type="hidden"
-                  name="public_search_record[public_search_type]"
-                  id="public_search_record_public_search_type"
-                />
-                <input
-                  value="learn_page_instructor_search"
-                  type="hidden"
-                  name="public_search_record[event_tracking_type]"
-                  id="public_search_record_event_tracking_type"
-                />
                 <div class="relative" data-select2-id="12">
-                  <h2
-                    class="title medium-fontsize-26 small-margin-top-15 small-margin-0"
-                  >
-                    <small class="block caps font-condensed">Step 1</small>
-                    Find a driving instructor
-                  </h2>
-                  <p class="title small-margin-bottom-15">
-                    Including availability, pricing &amp; bookings
-                  </p>
                   <div class="button-group radius small-margin-bottom-15">
                     <input
                       checked="checked"
@@ -262,15 +240,8 @@
                           data-select2-id="8"
                         >
                           <select
-                            include_blank="false"
                             id="public-search-record-suburb"
                             class="select required select2-name-field select2-hidden-accessible"
-                            required="required"
-                            aria-required="true"
-                            name="public_search_record[suburb]"
-                            data-select2-id="public-search-record-suburb"
-                            tabindex="-1"
-                            aria-hidden="true"
                           >
                             <option value="" data-select2-id="1">
                               Enter your suburb
@@ -280,6 +251,7 @@
                             class="select2 select2-container select2-container--default select2-container--below"
                             dir="ltr"
                             data-select2-id="5"
+                            @click.stop="handleShowSelect(1)"
                             style="width: 1px"
                             ><span class="selection"
                               ><span
@@ -300,14 +272,59 @@
                                 ><span
                                   class="select2-selection__arrow"
                                   role="presentation"
-                                  ><b
-                                    role="presentation"
-                                  ></b></span></span></span
-                            ><span
-                              class="dropdown-wrapper"
-                              aria-hidden="false"
-                            ></span
-                          ></span>
+                                  ><b role="presentation"></b></span></span
+                            ></span>
+                            <span
+                              v-if="isShowSelect1"
+                              class="select2-container select2-container--default select2-container--open"
+                              style="
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                              "
+                              ><span
+                                class="select2-dropdown select2-dropdown--below"
+                                dir="ltr"
+                                style="width: 100%"
+                                ><span
+                                  class="select2-search select2-search--dropdown"
+                                  ><input
+                                    class="select2-search__field"
+                                    @input="onSearch"
+                                    type="search"
+                                    tabindex="0"
+                                    autocomplete="off"
+                                    autocorrect="off"
+                                    autocapitalize="none"
+                                    spellcheck="false"
+                                    role="textbox" /></span
+                                ><span class="select2-results"
+                                  ><ul
+                                    class="select2-results__options"
+                                    role="tree"
+                                    id="select2-public-search-record-pricing-suburb-results"
+                                    aria-expanded="true"
+                                    aria-hidden="false"
+                                  >
+                                    <li
+                                      v-if="searchData.length === 0"
+                                      class="select2-results__option select2-results__message"
+                                    >
+                                      Please enter a suburb or postcode
+                                    </li>
+                                    <li
+                                      v-for="v in searchData"
+                                      :key="v"
+                                      class="select2-results__option select2-results__message"
+                                    >
+                                      {{ v }}
+                                    </li>
+                                  </ul></span
+                                ></span
+                              ></span
+                            >
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -806,9 +823,8 @@
                               </option></select
                             ><span
                               class="select2 select2-container select2-container--default"
-                              dir="ltr"
-                              data-select2-id="6"
                               style="width: 1px"
+                              @click.stop="handleShowSelect(2)"
                               ><span class="selection"
                                 ><span
                                   class="select2-selection select2-selection--single"
@@ -829,14 +845,59 @@
                                   ><span
                                     class="select2-selection__arrow"
                                     role="presentation"
-                                    ><b
-                                      role="presentation"
-                                    ></b></span></span></span
-                              ><span
-                                class="dropdown-wrapper"
-                                aria-hidden="true"
-                              ></span
-                            ></span>
+                                    ><b role="presentation"></b></span></span
+                              ></span>
+                              <span
+                                v-if="isShowSelect2"
+                                class="select2-container select2-container--default select2-container--open"
+                                style="
+                                  position: absolute;
+                                  bottom: 0;
+                                  left: 0;
+                                  width: 100%;
+                                "
+                                ><span
+                                  class="select2-dropdown select2-dropdown--below"
+                                  dir="ltr"
+                                  style="width: 100%"
+                                  ><span
+                                    class="select2-search select2-search--dropdown"
+                                    ><input
+                                      class="select2-search__field"
+                                      type="search"
+                                      @input="onSearch"
+                                      tabindex="0"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      autocapitalize="none"
+                                      spellcheck="false"
+                                      role="textbox" /></span
+                                  ><span class="select2-results"
+                                    ><ul
+                                      class="select2-results__options"
+                                      role="tree"
+                                      id="select2-public-search-record-pricing-suburb-results"
+                                      aria-expanded="true"
+                                      aria-hidden="false"
+                                    >
+                                      <li
+                                        v-if="searchData.length === 0"
+                                        class="select2-results__option select2-results__message"
+                                      >
+                                        Please enter a suburb or postcode
+                                      </li>
+                                      <li
+                                        v-for="v in searchData"
+                                        :key="v"
+                                        class="select2-results__option select2-results__message"
+                                      >
+                                        {{ v }}
+                                      </li>
+                                    </ul></span
+                                  ></span
+                                ></span
+                              >
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -3565,8 +3626,23 @@
                     rel="noopener"
                     target="_blank"
                     title="EzLicence Facebook"
-                    ><i class="fab fa-facebook fa-2x"></i
-                  ></a>
+                    ><svg
+                      class="svg-inline--fa fa-facebook fa-w-16 fa-2x"
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="facebook"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                      ></path></svg
+                    ><!-- <i class="fab fa-facebook fa-2x" aria-hidden="true"></i> Font Awesome fontawesome.com --></a
+                  >
                 </li>
                 <li>
                   <a
@@ -3574,8 +3650,23 @@
                     rel="noopener"
                     target="_blank"
                     title="EzLicence Instagram"
-                    ><i class="fab fa-instagram fa-2x"></i
-                  ></a>
+                    ><svg
+                      class="svg-inline--fa fa-instagram fa-w-14 fa-2x"
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="instagram"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path></svg
+                    ><!-- <i class="fab fa-instagram fa-2x" aria-hidden="true"></i> Font Awesome fontawesome.com --></a
+                  >
                 </li>
                 <li>
                   <a
@@ -3583,8 +3674,23 @@
                     rel="noopener"
                     target="_blank"
                     title="EzLicence Twitter"
-                    ><i class="fab fa-twitter fa-2x"></i
-                  ></a>
+                    ><svg
+                      class="svg-inline--fa fa-twitter fa-w-16 fa-2x"
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="twitter"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      ></path></svg
+                    ><!-- <i class="fab fa-twitter fa-2x" aria-hidden="true"></i> Font Awesome fontawesome.com --></a
+                  >
                 </li>
               </ul>
             </div>
@@ -3594,29 +3700,47 @@
     </div>
 
     <!-- todo...修改 小屏幕帮助按钮 -->
-    <span class="hide" id="cta-contact-container">
-      <div class="cta-contact">
-        <a title="Contact Us" class="has-tip tip-left" href="/contact"
-          ><svg
-            class="fill-white size-40 small-margin-10"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            width="48px"
-            height="48px"
-            viewBox="0 0 48 48"
+
+    <div class="help-wrap">
+      <div>
+        <button data-testid="launcher" aria-label="帮助" class="help-btn">
+          <span
+            data-testid="Icon"
+            class="container-2zrgf u-userColor icon-3CF6U Icon-1QudM Arrange-sizeFit u-textInheritColor u-inlineBlock Icon mobile-22a4Y is-mobile"
+            type="Icon"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="20px"
+              height="20px"
+              viewBox="0 0 20 20"
+              xml:space="preserve"
+              aria-hidden="true"
+            >
+              <g></g>
+              <g></g>
+              <g></g>
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M11,12.3V13c0,0-1.8,0-2,0v-0.6c0-0.6,0.1-1.4,0.8-2.1c0.7-0.7,1.6-1.2,1.6-2.1c0-0.9-0.7-1.4-1.4-1.4 c-1.3,0-1.4,1.4-1.5,1.7H6.6C6.6,7.1,7.2,5,10,5c2.4,0,3.4,1.6,3.4,3C13.4,10.4,11,10.8,11,12.3z"
+                    ></path>
+                    <circle cx="10" cy="15" r="1"></circle>
+                  </g>
+                  <path
+                    d="M10,2c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S5.6,2,10,2 M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0 L10,0z"
+                  ></path>
+                </g>
+              </g></svg></span
+          ><span class="help-label" v-if="!isPhone" data-testid="launcher-label"
+            >帮助</span
           >
-            <g transform="translate(0, 0)">
-              <path
-                fill="#444444"
-                d="M47,22C47,11.5,36.7,3,24,3S1,11.5,1,22s10.3,19,23,19c2,0,4.1-0.2,6.1-0.7l11.5,4.6c0.1,0,0.2,0.1,0.4,0.1 c0.2,0,0.4-0.1,0.6-0.2c0.3-0.2,0.4-0.6,0.4-0.9l-1.1-10C45.2,30.6,47,26.3,47,22z M26,27H16c-0.6,0-1-0.4-1-1s0.4-1,1-1h10 c0.6,0,1,0.4,1,1S26.6,27,26,27z M32,19H16c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S32.6,19,32,19z"
-              ></path>
-            </g>
-          </svg>
-        </a>
+        </button>
       </div>
-    </span>
+    </div>
   </div>
 </template>
 
@@ -3633,7 +3757,10 @@ export default {
     const isInitVideo = ref(false);
     const curIdx = ref(0);
     const isOpen = ref(false);
+    const isShowSelect1 = ref(false);
+    const isShowSelect2 = ref(false);
     const list = ref(Array(10).fill("1"));
+    const searchData = ref([]);
     const videoJSOptions = {
       autoplay: "muted",
       controls: true,
@@ -3660,13 +3787,28 @@ export default {
       ],
       techOrder: ["youtube", "vimeo", "flash"]
     };
-    
+
     const initVideo = () => {
       if (videoRef.value) {
         const player = videojs(videoRef.value, videoJSOptions, () => {
           // player.play();
         });
       }
+    };
+
+    const handleShowSelect = id => {
+      if (id === 1) {
+        isShowSelect1.value = true;
+        isShowSelect2.value = false;
+      } else {
+        isShowSelect2.value = true;
+        isShowSelect1.value = false;
+      }
+    };
+
+    const handleCloseAll = () => {
+      isShowSelect1.value && (isShowSelect1.value = false);
+      isShowSelect2.value && (isShowSelect2.value = false);
     };
 
     const handleClickDot = idx => {
@@ -3676,6 +3818,10 @@ export default {
     const setDotActClass = idx => {
       return idx === curIdx.value ? "active" : "";
     };
+
+    const isPhone = computed(() => {
+      return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+    });
 
     const getOwlStyle = computed(() => {
       return {
@@ -3755,6 +3901,13 @@ export default {
       changeSlide(startX, startY, endX, endY);
     };
 
+    const onSearch = val => {
+      const data = val.srcElement.value;
+      // tood..搜索内容赋值
+      searchData.value = [];
+      console.log("val", data);
+    };
+
     onMounted(() => {
       initVideo();
       // console.log("list->", list.value);
@@ -3765,13 +3918,20 @@ export default {
       onTouchEnd,
       onMousedown,
       onMouseup,
+      onSearch,
       handleClickDot,
+      handleShowSelect,
+      handleCloseAll,
       setDotActClass,
       getOwlStyle,
       list,
+      searchData,
       videoRef,
       isInitVideo,
-      isOpen
+      isOpen,
+      isShowSelect1,
+      isShowSelect2,
+      isPhone
     };
   }
 };
@@ -3806,6 +3966,30 @@ export default {
 ::v-deep .accordion-navigation .el-collapse-item__content {
   background-color: #f6f6f6; /* 设置背景色 */
 }
+.help-wrap {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999999999999999;
+  .help-btn {
+    display: flex;
+    background-color: #ffc20e !important;
+    color: #675110 !important;
+    fill: #675110 !important;
+    padding: 0.92857rem 1.57143rem;
+    border-radius: 999rem;
+    bottom: 0;
+    letter-spacing: 0.6;
+    font-size: 1.07143rem;
+    align-items: center;
+    .help-label {
+      vertical-align: middle;
+      font-size: 1.07143rem;
+      padding-left: 10px;
+    }
+  }
+}
+
 @import url("./font.css");
 @import url("./svg.css");
 @import url("./justreview.css");
