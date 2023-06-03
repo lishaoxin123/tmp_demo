@@ -34980,22 +34980,23 @@ ul.list-stats li:first-child {
   color: #ffc20e;
 }
 
-.progress-bar li.is-complete:before,
-.progress-bar li.is-complete:after {
+.progress-bar li .is-complete:before,
+.progress-bar li .is-complete:after {
   background: #ffc20e;
 }
 
-.progress-bar li.is-complete:before {
+.progress-bar li .is-complete:before {
   font-family: "FontAwesome";
-  content: "\f00c";
+  /* content: "\f00c"; */
+  background: url("@/assets/img/i_success.png");
   color: #ffffff !important;
 }
 
-.progress-bar li.is-active {
+.progress-bar li .is-active {
   color: #ffc20e;
 }
 
-.progress-bar li.is-active:before {
+.progress-bar li .is-active:before {
   color: #fff;
   background: #ffc20e;
 }
@@ -35004,7 +35005,7 @@ a[id*="_lesson_button"] {
   display: block;
 }
 
-a[id*="_lesson_button"] ul.pricing-table {
+a[id*="_lesson_button"] ul .pricing-table {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   -ms-box-shadow: none !important;
@@ -37031,7 +37032,8 @@ body [class*="blog_posts"] article .cta-banner img {
 .fc .fc-event.lesson .fc-time:before,
 .fc .fc-event.lesson_private .fc-time:before {
   font-family: "FontAwesome";
-  content: "\f00c";
+  /* content: "\f00c"; */
+  background: url("@/assets/img/i_success.png");
   color: #2fa750;
   margin-right: 5px;
 }
@@ -39087,18 +39089,37 @@ form.edit_public_search_record .button-group input:checked + label:active {
   background: white;
 }
 
-form.new_public_search_record .button-group input:checked + label:before,
-form.new_public_search_record .button-group input:checked + label:active:before,
-form.edit_public_search_record .button-group input:checked + label:before,
-form.edit_public_search_record
+.form1 .new_public_search_record .button-group input:checked + label:before,
+.form1
+  .new_public_search_record
+  .button-group
+  input:checked
+  + label:active:before,
+.form1 .edit_public_search_record .button-group input:checked + label:before,
+.form1
+  .edit_public_search_record
   .button-group
   input:checked
   + label:active:before {
   display: inline-block;
   font-family: "FontAwesome";
-  content: "\f00c";
+  /* content: "\f00c"; */
+  background: url("@/assets/img/i_success.png");
   color: #2fa750;
   width: 30px;
+  transform: translateY(-4px);
+  margin-left: -15px;
+}
+input:checked + .secondary-label:before,
+input:checked + .secondary-label:active:before {
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "\f00c";
+  background: url("@/assets/img/i_success.png") no-repeat;
+  background-size: 30px 30px;
+  color: #2fa750;
+  width: 30px;
+  transform: translateY(-4px);
   margin-left: -15px;
 }
 
@@ -40530,7 +40551,8 @@ form .file-uploader,
 form .file-uploader.checked:before,
 .form-wrap .file-uploader.checked:before {
   color: #ffc20e !important;
-  content: "\f00c";
+  content: "";
+  background: url("@/assets/img/i_success.png");
 }
 
 form .file-uploader:before,

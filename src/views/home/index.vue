@@ -198,7 +198,9 @@
                 data-select2-id="13"
               >
                 <div class="relative" data-select2-id="12">
-                  <div class="button-group radius small-margin-bottom-15">
+                  <div
+                    class="button-group radius small-margin-bottom-15 select-con"
+                  >
                     <input
                       checked="checked"
                       class="transmission-auto"
@@ -208,7 +210,7 @@
                       value="Auto"
                     />
                     <label
-                      class="button secondary small"
+                      class="button secondary small secondary-label"
                       for="public-search-record-transmission-auto"
                       >Auto</label
                     >
@@ -220,7 +222,7 @@
                       value="Manual"
                     />
                     <label
-                      class="button secondary small"
+                      class="button secondary small secondary-label"
                       for="public-search-record-transmission-manual"
                       >Manual</label
                     >
@@ -783,7 +785,7 @@
                         value="Auto"
                       />
                       <label
-                        class="button secondary small"
+                        class="button secondary small secondary-label"
                         for="public-search-record-pricing-transmission-auto"
                         >Auto</label
                       >
@@ -795,7 +797,7 @@
                         value="Manual"
                       />
                       <label
-                        class="button secondary small"
+                        class="button secondary small secondary-label"
                         for="public-search-record-pricing-transmission-manual"
                         >Manual</label
                       >
@@ -3761,6 +3763,7 @@ export default {
     const isShowSelect2 = ref(false);
     const list = ref(Array(10).fill("1"));
     const searchData = ref([]);
+    const selectMode = ref(1);
     const videoJSOptions = {
       autoplay: "muted",
       controls: true,
