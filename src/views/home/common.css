@@ -39114,12 +39114,12 @@ input:checked + .secondary-label:before,
 input:checked + .secondary-label:active:before {
   display: inline-block;
   font-family: "FontAwesome";
-  content: "\f00c";
+  content: "\&#32";
   background: url("@/assets/img/i_success.png") no-repeat;
-  background-size: 30px 30px;
-  color: #2fa750;
+  background-size: 100% 100%;
+  color: transparent;
   width: 30px;
-  transform: translateY(-4px);
+  /* transform: translateY(-4px); */
   margin-left: -15px;
 }
 
